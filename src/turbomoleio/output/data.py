@@ -1134,6 +1134,7 @@ class SingleExcitation(MSONable):
     def __init__(
         self,
         tot_en=None,
+        ex_en=None,
         osc_stre=None,
         rot_stre=None,
         dominant_contributions=None,
@@ -1143,6 +1144,7 @@ class SingleExcitation(MSONable):
 
         Args:
             tot_en (float): total energy.
+            ex_en (float): excitation energy in hartree.
             osc_stre (float): oscillator strength, length representation.
             rot_stre (float): rotatory strength, length representation.
             dominant_contributions (list): list of all the dominant contributions.
@@ -1159,6 +1161,7 @@ class SingleExcitation(MSONable):
                 "trace" and "anisotropy").
         """
         self.tot_en = tot_en
+        self.ex_en = ex_en
         self.osc_stre = osc_stre
         self.rot_stre = rot_stre
         self.dominant_contributions = dominant_contributions

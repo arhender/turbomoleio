@@ -1748,6 +1748,10 @@ class Parser:
         r_tot_en = r"Total energy:\s+(" + float_number_all_re + r")"
         regex_tot_en = re.compile(r_tot_en)
 
+        # Finds the value of the excitation energy (hartree)
+        r_ex_en = r"Excitation energy:\s+(" + float_number_all_re + r")"
+        regex_ex_en = re.compile(r_ex_en)
+
         # Parses:
         #  Oscillator strength:
         #     velocity representation:             0.1689055727340166
@@ -1815,6 +1819,7 @@ class Parser:
             for exc_group in match_excitations:
                 exc_data = dict(
                     tot_en=None,
+                    ex_en=None,
                     osc_stre=None,
                     rot_stre=None,
                     dominant_contributions=None,
@@ -1824,6 +1829,10 @@ class Parser:
                 match_tot_en = regex_tot_en.search(exc_group)
                 if match_tot_en:  # pragma: no branch
                     exc_data["tot_en"] = convert_float(match_tot_en.group(1))
+
+                match_ex_en = regex_ex_en.search(exc_group)
+                if match_ex_en:
+                    exc_data["ex_en"] = convert_float(match_ex_en.group(1))
 
                 match_osc_stre = regex_osc.search(exc_group)
                 if match_osc_stre:  # pragma: no branch
