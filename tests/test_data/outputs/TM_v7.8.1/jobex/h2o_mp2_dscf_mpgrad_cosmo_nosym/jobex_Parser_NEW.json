@@ -1,0 +1,310 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": {
+    "aux_basis_per_specie": {},
+    "basis_per_specie": {
+      "h": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "number_scf_aux_basis_func": null,
+    "number_scf_basis_func": 18
+  },
+  "centers": {
+    "center_of_charge": [
+      -1.35e-06,
+      0.0,
+      -0.52704247
+    ],
+    "center_of_mass": [
+      -1.6e-06,
+      0.0,
+      -0.62653908
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      8.0,
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        -1.93e-06,
+        0.0,
+        -0.75291781
+      ],
+      [
+        1.44903023,
+        0.0,
+        0.37645966
+      ],
+      [
+        -1.44902831,
+        0.0,
+        0.37645815
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "o",
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": {
+    "area": 153.92221,
+    "volume": 172.807865
+  },
+  "cosmo_results": {
+    "element_radius": {
+      "h": {
+        "radius": 1.3,
+        "sites": [
+          2,
+          3
+        ]
+      },
+      "o": {
+        "radius": 1.72,
+        "sites": [
+          1
+        ]
+      }
+    },
+    "energies": {
+      "dielectric_energy": -0.0153746759,
+      "dielectric_energy_oc_corr": -0.0155339226,
+      "total_energy": -75.9512613272484,
+      "total_energy_oc_corr": -75.9514205739
+    },
+    "parameters": {
+      "ampran": 1e-05,
+      "cavity": "closed",
+      "disex": 10.0,
+      "disex2": 3538.5,
+      "epsilon": Infinity,
+      "fepsi": 1.0,
+      "nppa": 1082,
+      "nps": 136,
+      "npspher": 92,
+      "nspa": 92,
+      "nsph": 32,
+      "phsran": 0.0,
+      "refind": 1.3,
+      "routf": 0.85,
+      "rsolv": 1.3,
+      "solvent": "not set",
+      "source": "Custom values, not taken from cosmosolvent list!"
+    },
+    "screening_charge": {
+      "correction": 0.00357,
+      "cosmo": -0.003995,
+      "total": -0.000425
+    }
+  },
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": {
+    "charge": -0.0,
+    "dipole": {
+      "moment": [
+        -6e-06,
+        -1.3e-05,
+        1.020661
+      ],
+      "norm": 1.0207
+    },
+    "quadrupole": {
+      "anisotropy": 2.44474,
+      "moment": [
+        [
+          -2.992716,
+          -0.0,
+          2.7e-05
+        ],
+        [
+          -0.0,
+          -5.354257,
+          1.1e-05
+        ],
+        [
+          2.7e-05,
+          1.1e-05,
+          -5.512925
+        ]
+      ],
+      "trace": -13.859898
+    },
+    "unrestricted_electrons": null
+  },
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": {
+    "dielectric": [
+      [
+        0.0,
+        -8e-06,
+        -2e-06
+      ],
+      [
+        -8e-06,
+        0.0,
+        -0.0
+      ],
+      [
+        -2e-06,
+        -0.0,
+        0.0
+      ]
+    ],
+    "gradients": [
+      [
+        -6.801836e-07,
+        5.158911e-07,
+        -2.332892e-07
+      ],
+      [
+        3.653318e-07,
+        -5.827618e-06,
+        -1.199594e-06
+      ],
+      [
+        3.148519e-07,
+        5.311727e-06,
+        1.432827e-06
+      ]
+    ]
+  },
+  "header": {
+    "executable": "statpt",
+    "host": "computermachine",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:49.216000"
+    },
+    "tm_build": null,
+    "tm_version": "7.9"
+  },
+  "integral": {
+    "integral_neglect_threshold": 1.8e-10,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": -76.14224412988845
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": {
+    "conv_one_e_en": 0.0001,
+    "conv_tot_en": 1e-07,
+    "diis": true,
+    "diis_error_vect": "FDS-SDF",
+    "n_occupied_orbitals": 5,
+    "orbital_characterization": "scfconv=7",
+    "restart_file": "mos",
+    "virtual_orbital_shift_limit": 0.1,
+    "virtual_orbital_shift_on": true
+  },
+  "rdgrad_memory": null,
+  "relax_conv_info": {
+    "energy_change": {
+      "conv": true,
+      "thr": 1e-06,
+      "value": 0.0
+    },
+    "max_displ": {
+      "conv": true,
+      "thr": 0.001,
+      "value": 1.45e-05
+    },
+    "max_grad": {
+      "conv": true,
+      "thr": 0.001,
+      "value": 7.4e-06
+    },
+    "rms_displ": {
+      "conv": true,
+      "thr": 0.0005,
+      "value": 1.21e-05
+    },
+    "rms_grad": {
+      "conv": true,
+      "thr": 0.0005,
+      "value": 6.1e-06
+    }
+  },
+  "relax_gradient_values": {
+    "max_internal": null,
+    "norm_cartesian": 1.53649e-05,
+    "norm_internal": 1.0554e-05
+  },
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": {
+    "kinetic_energy": 75.80147124899,
+    "potential_energy": -151.75273257624,
+    "total_energy": -75.95126132725,
+    "virial_theorem": 1.99802781316,
+    "wavefunction_norm": 1.0
+  },
+  "scf_iterations": {
+    "converged": true,
+    "dampings": [
+      0.3,
+      0.3,
+      0.35
+    ],
+    "energies": [
+      -75.951261327168,
+      -75.951261327223,
+      -75.951261327248
+    ],
+    "first_index": 1,
+    "n_steps": 3
+  },
+  "statpt_info": {
+    "final_step_radius": null,
+    "hessian_update_method": "BFGS",
+    "init_trust_radius": 0.15,
+    "max_trust_radius": 0.3,
+    "min_grad_norm_for_gdiis": 0.01,
+    "min_trust_radius": 0.001,
+    "prev_steps_for_gdiis": 5,
+    "thr_energy_change": 1e-06,
+    "thr_max_displ": 0.001,
+    "thr_max_grad": 0.001,
+    "thr_rms_displ": 0.0005,
+    "thr_rms_grad": 0.0005,
+    "use_defaults": true
+  },
+  "symmetry": {
+    "n_reps": 1,
+    "reps": [
+      "a"
+    ],
+    "symbol": "c1"
+  },
+  "timings": {
+    "cpu_time": 0.01,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:49.220000"
+    },
+    "wall_time": 0.01
+  }
+}

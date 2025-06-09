@@ -1,0 +1,37 @@
+{
+  "@class": "Ricc2Output",
+  "@module": "turbomoleio.output.files",
+  "@version": "1.5.0",
+  "mp2": {
+    "@class": "MP2Results",
+    "@module": "turbomoleio.output.data",
+    "@version": "1.5.0",
+    "energy": -76.1252418683
+  },
+  "run": {
+    "@class": "RunData",
+    "@module": "turbomoleio.output.data",
+    "@version": "1.5.0",
+    "cpu_time": 0.1,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:01.244000"
+    },
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:01.151000"
+    },
+    "wall_time": 0.1
+  },
+  "tm": {
+    "@class": "TurbomoleData",
+    "@module": "turbomoleio.output.data",
+    "@version": "1.5.0",
+    "build": null,
+    "executable": "ricc2",
+    "version": "7.8.1"
+  }
+}

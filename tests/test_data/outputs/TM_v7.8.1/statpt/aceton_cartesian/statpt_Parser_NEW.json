@@ -1,0 +1,202 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": null,
+  "centers": {
+    "center_of_charge": [
+      -0.00071328,
+      0.15355432,
+      0.0
+    ],
+    "center_of_mass": [
+      -0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      8.0,
+      6.0,
+      6.0,
+      6.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        0.04340035,
+        -2.43303953,
+        0.0
+      ],
+      [
+        2.40289845,
+        1.33092842,
+        0.0
+      ],
+      [
+        -2.44869437,
+        1.25914649,
+        0.0
+      ],
+      [
+        -0.00810063,
+        -0.18289217,
+        0.0
+      ],
+      [
+        2.09020694,
+        3.35088178,
+        0.0
+      ],
+      [
+        -4.02779836,
+        -0.02916167,
+        0.0
+      ],
+      [
+        3.51545227,
+        0.83515949,
+        1.64389798
+      ],
+      [
+        3.51545227,
+        0.83515949,
+        -1.64389798
+      ],
+      [
+        -2.56998075,
+        2.4714595,
+        1.64993688
+      ],
+      [
+        -2.56998075,
+        2.4714595,
+        -1.64993688
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "o",
+      "c",
+      "c",
+      "c",
+      "h",
+      "h",
+      "h",
+      "h",
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": null,
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "statpt",
+    "host": "computermachine",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:52:06.227000"
+    },
+    "tm_build": null,
+    "tm_version": "7.9"
+  },
+  "integral": null,
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": null,
+  "rdgrad_memory": null,
+  "relax_conv_info": {
+    "energy_change": {
+      "conv": false,
+      "thr": 1e-06,
+      "value": 192.9994516
+    },
+    "max_displ": {
+      "conv": false,
+      "thr": 0.001,
+      "value": 0.101343
+    },
+    "max_grad": {
+      "conv": false,
+      "thr": 0.001,
+      "value": 0.0551553
+    },
+    "rms_displ": {
+      "conv": false,
+      "thr": 0.0005,
+      "value": 0.0273861
+    },
+    "rms_grad": {
+      "conv": false,
+      "thr": 0.0005,
+      "value": 0.0149046
+    }
+  },
+  "relax_gradient_values": {
+    "max_internal": null,
+    "norm_cartesian": 0.0816359,
+    "norm_internal": null
+  },
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": null,
+  "scf_iterations": null,
+  "statpt_info": {
+    "final_step_radius": 0.15,
+    "hessian_update_method": "BFGS",
+    "init_trust_radius": 0.15,
+    "max_trust_radius": 0.3,
+    "min_grad_norm_for_gdiis": 0.01,
+    "min_trust_radius": 0.001,
+    "prev_steps_for_gdiis": 5,
+    "thr_energy_change": 1e-06,
+    "thr_max_displ": 0.001,
+    "thr_max_grad": 0.001,
+    "thr_rms_displ": 0.0005,
+    "thr_rms_grad": 0.0005,
+    "use_defaults": true
+  },
+  "symmetry": null,
+  "timings": {
+    "cpu_time": 0.01,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:52:06.230000"
+    },
+    "wall_time": 0.01
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "@class": "Ricc2Output",
+  "@module": "turbomoleio.output.files",
+  "@version": "1.6.0",
+  "mp2": null,
+  "run": {
+    "@class": "RunData",
+    "@module": "turbomoleio.output.data",
+    "@version": "1.6.0",
+    "cpu_time": 0.09,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:51.091000"
+    },
+    "host": "computermachine",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:51.050000"
+    },
+    "wall_time": 0.05
+  },
+  "tm": {
+    "@class": "TurbomoleData",
+    "@module": "turbomoleio.output.data",
+    "@version": "1.6.0",
+    "build": null,
+    "executable": "ricc2",
+    "version": "7.9"
+  }
+}

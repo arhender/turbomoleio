@@ -1,0 +1,113 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": null,
+  "centers": {
+    "center_of_charge": null,
+    "center_of_mass": null
+  },
+  "coordinates": null,
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": {
+    "functional_msg": "B-P86 functional\n exchange:    LDA + Becke (B88)\n correlation: LDA (VWN) + Perdew (P86)",
+    "functional_name": "b-p",
+    "functional_type": "GGA",
+    "gridpoints": 302,
+    "spherical_gridsize": 3,
+    "xcfun": null
+  },
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": null,
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": {
+    "dielectric": [
+      [
+        -0.076592,
+        -0.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        0.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        -0.0,
+        -0.04513
+      ]
+    ],
+    "gradients": [
+      [
+        7.307738e-14,
+        9.311052e-14,
+        0.04147683
+      ],
+      [
+        -0.02702341,
+        -4.001707e-14,
+        -0.0207218
+      ],
+      [
+        0.02702341,
+        -1.287668e-14,
+        -0.0207218
+      ]
+    ]
+  },
+  "header": {
+    "executable": "rdgrad",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:00.578000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": {
+    "integral_neglect_threshold": 1.8e-11,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": null,
+  "rdgrad_memory": 1,
+  "relax_conv_info": null,
+  "relax_gradient_values": null,
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": null,
+  "scf_iterations": null,
+  "statpt_info": null,
+  "symmetry": {
+    "n_reps": 1,
+    "reps": [
+      "a"
+    ],
+    "symbol": "c1"
+  },
+  "timings": {
+    "cpu_time": 0.06,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:00.631000"
+    },
+    "wall_time": 0.06
+  }
+}

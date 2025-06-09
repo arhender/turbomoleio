@@ -1,0 +1,155 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": {
+    "aux_basis_per_specie": {},
+    "basis_per_specie": {
+      "h": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "number_scf_aux_basis_func": null,
+    "number_scf_basis_func": 18
+  },
+  "centers": {
+    "center_of_charge": [
+      0.0,
+      0.0,
+      -0.50790525
+    ],
+    "center_of_mass": [
+      0.0,
+      0.0,
+      -0.60378908
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      8.0,
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        -0.72557892
+      ],
+      [
+        1.41713421,
+        0.0,
+        0.36278946
+      ],
+      [
+        -1.41713421,
+        0.0,
+        0.36278946
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "o",
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": null,
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": {
+    "dielectric": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "gradients": [
+      [
+        0.0,
+        -1.104883e-13,
+        0.02753523
+      ],
+      [
+        -0.02103089,
+        5.763155e-14,
+        -0.01376761
+      ],
+      [
+        0.02103089,
+        5.285677e-14,
+        -0.01376761
+      ]
+    ]
+  },
+  "header": {
+    "executable": "ricc2",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:03.061000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": {
+    "integral_neglect_threshold": 1e-08,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": -76.1252418683
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": null,
+  "rdgrad_memory": null,
+  "relax_conv_info": null,
+  "relax_gradient_values": null,
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": null,
+  "scf_iterations": null,
+  "statpt_info": null,
+  "symmetry": {
+    "n_reps": 1,
+    "reps": [
+      "a"
+    ],
+    "symbol": "c1"
+  },
+  "timings": {
+    "cpu_time": 0.09,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:03.144000"
+    },
+    "wall_time": 0.09
+  }
+}

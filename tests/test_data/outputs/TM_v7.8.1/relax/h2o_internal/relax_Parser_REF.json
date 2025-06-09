@@ -1,0 +1,88 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": null,
+  "centers": {
+    "center_of_charge": null,
+    "center_of_mass": null
+  },
+  "coordinates": null,
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": null,
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "relax",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:00.989000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": null,
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": null,
+  "rdgrad_memory": null,
+  "relax_conv_info": {
+    "energy_change": {
+      "conv": false,
+      "thr": 1e-06,
+      "value": 76.3427622
+    },
+    "max_displ": null,
+    "max_grad": {
+      "conv": false,
+      "thr": 0.001,
+      "value": 0.0481023
+    },
+    "rms_displ": null,
+    "rms_grad": null
+  },
+  "relax_gradient_values": {
+    "max_internal": 0.048102,
+    "norm_cartesian": 0.063424,
+    "norm_internal": 0.048102
+  },
+  "relax_info": {
+    "optimizations": [
+      "INTERNAL coordinates"
+    ],
+    "thr_int_coord": 1e-07
+  },
+  "rij_info": null,
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": null,
+  "scf_iterations": null,
+  "statpt_info": null,
+  "symmetry": {
+    "n_reps": null,
+    "reps": null,
+    "symbol": "c2v"
+  },
+  "timings": {
+    "cpu_time": 0.01,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:00.997000"
+    },
+    "wall_time": 0.01
+  }
+}

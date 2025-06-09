@@ -1,0 +1,296 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": {
+    "aux_basis_per_specie": {
+      "n": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "basis_per_specie": {
+      "n": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "number_scf_aux_basis_func": 148,
+    "number_scf_basis_func": 56
+  },
+  "centers": {
+    "center_of_charge": [
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "center_of_mass": [
+      -0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      7.0,
+      8.0,
+      8.0,
+      8.0
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.17613204,
+        2.03712046,
+        0.0
+      ],
+      [
+        -1.17613204,
+        -2.03712046,
+        0.0
+      ],
+      [
+        2.35226409,
+        0.0,
+        0.0
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "n",
+      "o",
+      "o",
+      "o"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": {
+    "functional_msg": "B-P86 functional\n exchange:    LDA + Becke (B88)\n correlation: LDA (VWN) + Perdew (P86)",
+    "functional_name": "b-p",
+    "functional_type": "GGA",
+    "gridpoints": 302,
+    "spherical_gridsize": 3,
+    "xcfun": null
+  },
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": {
+    "charge": 0.0,
+    "dipole": {
+      "moment": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "norm": 0.0
+    },
+    "quadrupole": {
+      "anisotropy": 1.989431,
+      "moment": [
+        [
+          -16.595633,
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -16.595633,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -14.606201
+        ]
+      ],
+      "trace": -47.797467
+    },
+    "unrestricted_electrons": 1.0
+  },
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": {
+    "dielectric": [
+      [
+        -4.3e-05,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -4.3e-05,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "gradients": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        6.026713e-06,
+        -1.043857e-05,
+        0.0
+      ],
+      [
+        6.026713e-06,
+        1.043857e-05,
+        0.0
+      ],
+      [
+        -1.205343e-05,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "header": {
+    "executable": "rdgrad",
+    "host": "computermachine",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:44.996000"
+    },
+    "tm_build": null,
+    "tm_version": "7.9"
+  },
+  "integral": {
+    "integral_neglect_threshold": 5.6e-11,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": true,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": {
+    "conv_one_e_en": 0.0001,
+    "conv_tot_en": 1e-07,
+    "diis": true,
+    "diis_error_vect": "FDS-SDF",
+    "n_occupied_orbitals": 16,
+    "orbital_characterization": "scfconv=7",
+    "restart_file": "alpha",
+    "virtual_orbital_shift_limit": null,
+    "virtual_orbital_shift_on": false
+  },
+  "rdgrad_memory": 1,
+  "relax_conv_info": {
+    "energy_change": {
+      "conv": true,
+      "thr": 1e-06,
+      "value": 5e-07
+    },
+    "max_displ": {
+      "conv": true,
+      "thr": 0.001,
+      "value": 2.84e-05
+    },
+    "max_grad": {
+      "conv": true,
+      "thr": 0.001,
+      "value": 2.09e-05
+    },
+    "rms_displ": {
+      "conv": true,
+      "thr": 0.0005,
+      "value": 2.84e-05
+    },
+    "rms_grad": {
+      "conv": true,
+      "thr": 0.0005,
+      "value": 2.09e-05
+    }
+  },
+  "relax_gradient_values": {
+    "max_internal": null,
+    "norm_cartesian": 2.08771e-05,
+    "norm_internal": 2.08771e-05
+  },
+  "relax_info": null,
+  "rij_info": {
+    "marij": false,
+    "ricore": 500,
+    "rij_memory": 1,
+    "rik": false
+  },
+  "riper_scf_energies": null,
+  "s2": {
+    "s2": 0.75198905
+  },
+  "scf_energies": {
+    "kinetic_energy": 278.36285048323,
+    "potential_energy": -558.43225550012,
+    "total_energy": -280.06940501689,
+    "virial_theorem": 1.99390667276,
+    "wavefunction_norm": 1.0
+  },
+  "scf_iterations": {
+    "converged": true,
+    "dampings": [
+      1.0,
+      1.0,
+      1.05
+    ],
+    "energies": [
+      -280.06984303996,
+      -280.0698430584,
+      -280.06940501689
+    ],
+    "first_index": 1,
+    "n_steps": 3
+  },
+  "statpt_info": {
+    "final_step_radius": null,
+    "hessian_update_method": "BFGS",
+    "init_trust_radius": 0.15,
+    "max_trust_radius": 0.3,
+    "min_grad_norm_for_gdiis": 0.01,
+    "min_trust_radius": 0.001,
+    "prev_steps_for_gdiis": 5,
+    "thr_energy_change": 1e-06,
+    "thr_max_displ": 0.001,
+    "thr_max_grad": 0.001,
+    "thr_rms_displ": 0.0005,
+    "thr_rms_grad": 0.0005,
+    "use_defaults": true
+  },
+  "symmetry": {
+    "n_reps": 6,
+    "reps": [
+      "a1'",
+      "a2'",
+      "e'",
+      "a1\"",
+      "a2\"",
+      "e\""
+    ],
+    "symbol": "d3h"
+  },
+  "timings": {
+    "cpu_time": 0.04,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:45.035000"
+    },
+    "wall_time": 0.05
+  }
+}

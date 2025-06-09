@@ -1,0 +1,207 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": {
+    "aux_basis_per_specie": {},
+    "basis_per_specie": {
+      "h": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "number_scf_aux_basis_func": null,
+    "number_scf_basis_func": 18
+  },
+  "centers": {
+    "center_of_charge": [
+      0.0,
+      0.0,
+      -0.50790525
+    ],
+    "center_of_mass": [
+      0.0,
+      0.0,
+      -0.60378908
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      8.0,
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        -0.72557892
+      ],
+      [
+        1.41713421,
+        0.0,
+        0.36278946
+      ],
+      [
+        -1.41713421,
+        0.0,
+        0.36278946
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "o",
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": {
+    "functional_msg": "B-P86 functional\n exchange:    LDA + Becke (B88)\n correlation: LDA (VWN) + Perdew (P86)",
+    "functional_name": "b-p",
+    "functional_type": "GGA",
+    "gridpoints": 302,
+    "spherical_gridsize": 3,
+    "xcfun": null
+  },
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": {
+    "charge": 1.0,
+    "dipole": {
+      "moment": [
+        -0.0,
+        -0.0,
+        0.37348
+      ],
+      "norm": 0.3735
+    },
+    "quadrupole": {
+      "anisotropy": 1.970245,
+      "moment": [
+        [
+          -1.774499,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -3.4926,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -3.925046
+        ]
+      ],
+      "trace": -9.192144
+    },
+    "unrestricted_electrons": 1.0
+  },
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "dscf",
+    "host": "computermachine",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:36.406000"
+    },
+    "tm_build": null,
+    "tm_version": "7.9"
+  },
+  "integral": {
+    "integral_neglect_threshold": 1.8e-10,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": true,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": {
+    "conv_one_e_en": 0.0001,
+    "conv_tot_en": 1e-07,
+    "diis": true,
+    "diis_error_vect": "FDS-SDF",
+    "n_occupied_orbitals": 5,
+    "orbital_characterization": "expanded",
+    "restart_file": "alpha",
+    "virtual_orbital_shift_limit": null,
+    "virtual_orbital_shift_on": false
+  },
+  "rdgrad_memory": null,
+  "relax_conv_info": null,
+  "relax_gradient_values": null,
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": null,
+  "s2": {
+    "s2": 0.7520542
+  },
+  "scf_energies": {
+    "kinetic_energy": 75.74900599616,
+    "potential_energy": -151.6295666727,
+    "total_energy": -75.88056067654,
+    "virial_theorem": 1.99826629272,
+    "wavefunction_norm": 1.0
+  },
+  "scf_iterations": {
+    "converged": true,
+    "dampings": [
+      1.0,
+      0.95,
+      0.8,
+      0.65,
+      0.5,
+      0.35,
+      0.2,
+      0.1,
+      0.15,
+      0.2,
+      0.25
+    ],
+    "energies": [
+      -75.709149222343,
+      -75.816081492466,
+      -75.857212061739,
+      -75.874157090013,
+      -75.879194045962,
+      -75.880260802113,
+      -75.880414311673,
+      -75.880428556505,
+      -75.880429245802,
+      -75.880429377768,
+      -75.88056067654
+    ],
+    "first_index": 1,
+    "n_steps": 11
+  },
+  "statpt_info": null,
+  "symmetry": {
+    "n_reps": 1,
+    "reps": [
+      "a"
+    ],
+    "symbol": "c1"
+  },
+  "timings": {
+    "cpu_time": 0.15,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:36.480000"
+    },
+    "wall_time": 0.08
+  }
+}

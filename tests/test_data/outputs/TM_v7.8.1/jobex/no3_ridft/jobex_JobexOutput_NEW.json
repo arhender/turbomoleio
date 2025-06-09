@@ -1,0 +1,437 @@
+{
+  "@class": "JobexOutput",
+  "@module": "turbomoleio.output.files",
+  "@version": "1.6.0",
+  "energy": {
+    "@class": "ScfOutput",
+    "@module": "turbomoleio.output.files",
+    "@version": "1.6.0",
+    "basis": {
+      "@class": "BasisData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "aux_basis_per_specie": {
+        "n": "def-SV(P)",
+        "o": "def-SV(P)"
+      },
+      "basis_per_specie": {
+        "n": "def-SV(P)",
+        "o": "def-SV(P)"
+      },
+      "number_scf_aux_basis_func": 148,
+      "number_scf_basis_func": 56
+    },
+    "cosmo": null,
+    "dft": {
+      "@class": "DFTData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "dispersion_correction": null,
+      "functional": {
+        "@class": "FunctionalData",
+        "@module": "turbomoleio.output.data",
+        "@version": "1.6.0",
+        "func_type": "GGA",
+        "msg": "B-P86 functional\n exchange:    LDA + Becke (B88)\n correlation: LDA (VWN) + Perdew (P86)",
+        "name": "b-p",
+        "xcfun": null
+      },
+      "gridpoints": 302,
+      "ri": {
+        "@class": "RiData",
+        "@module": "turbomoleio.output.data",
+        "@version": "1.6.0",
+        "marij": false,
+        "ricore": 500,
+        "rij_memory": 1,
+        "rik": false
+      },
+      "spherical_gridsize": 3
+    },
+    "electrostatic": {
+      "@class": "ElectrostaticMomentsData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "charge": 0.0,
+      "dipole_norm": 0.0,
+      "dipole_vector": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quadrupole_anisotropy": 1.989431,
+      "quadrupole_tensor": [
+        [
+          -16.595633,
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -16.595633,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -14.606201
+        ]
+      ],
+      "quadrupole_trace": -47.797467,
+      "unrestricted_electrons": 1.0
+    },
+    "energies": {
+      "@class": "ScfEnergiesData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "coulomb_energy": null,
+      "free_energy": null,
+      "kinetic_energy": 278.36285048323,
+      "potential_energy": -558.43225550012,
+      "sigma0_energy": null,
+      "total_energy": -280.06940501689,
+      "ts_energy": null,
+      "virial_theorem": 1.99390667276,
+      "wavefunction_norm": 1.0,
+      "xc_energy": null
+    },
+    "geometry": {
+      "@class": "GeometryData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "center_of_charge": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "center_of_mass": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "molecule": {
+        "@class": "Molecule",
+        "@module": "pymatgen.core.structure",
+        "charge": 0.0,
+        "properties": {},
+        "sites": [
+          {
+            "label": "N",
+            "name": "N",
+            "properties": {},
+            "species": [
+              {
+                "element": "N",
+                "occu": 1
+              }
+            ],
+            "xyz": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "label": "O",
+            "name": "O",
+            "properties": {},
+            "species": [
+              {
+                "element": "O",
+                "occu": 1
+              }
+            ],
+            "xyz": [
+              -0.6223866114117508,
+              1.0780052315895279,
+              0.0
+            ]
+          },
+          {
+            "label": "O",
+            "name": "O",
+            "properties": {},
+            "species": [
+              {
+                "element": "O",
+                "occu": 1
+              }
+            ],
+            "xyz": [
+              -0.6223866114117508,
+              -1.0780052315895279,
+              0.0
+            ]
+          },
+          {
+            "label": "O",
+            "name": "O",
+            "properties": {},
+            "species": [
+              {
+                "element": "O",
+                "occu": 1
+              }
+            ],
+            "xyz": [
+              1.2447732175317294,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "spin_multiplicity": 2
+      }
+    },
+    "integral": {
+      "@class": "IntegralData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "integral_neglect_threshold": 5.6e-11,
+      "thime": 5,
+      "thize": 1e-05
+    },
+    "periodicity": null,
+    "run": {
+      "@class": "RunData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "cpu_time": 0.07,
+      "end_time": {
+        "@class": "datetime",
+        "@module": "datetime",
+        "string": "2025-06-09 21:51:45.145000"
+      },
+      "host": "computermachine",
+      "start_time": {
+        "@class": "datetime",
+        "@module": "datetime",
+        "string": "2025-06-09 21:51:45.083000"
+      },
+      "wall_time": 0.07
+    },
+    "scf": {
+      "@class": "ScfData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "conv_one_e_en": 0.0001,
+      "conv_tot_en": 1e-07,
+      "diis": true,
+      "diis_error_vect": "FDS-SDF",
+      "iterations": {
+        "@class": "ScfIterationData",
+        "@module": "turbomoleio.output.data",
+        "@version": "1.6.0",
+        "converged": true,
+        "dampings": [
+          1.0,
+          1.0,
+          1.05
+        ],
+        "energies": [
+          -280.06984303996,
+          -280.0698430584,
+          -280.06940501689
+        ],
+        "first_index": 1,
+        "n_steps": 3
+      },
+      "n_occupied_orbitals": 16,
+      "orbital_characterization": "scfconv=7",
+      "restart_file": "alpha",
+      "virtual_orbital_shift_limit": null,
+      "virtual_orbital_shift_on": false
+    },
+    "smearing": null,
+    "spin": {
+      "@class": "SpinData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "s2": {
+        "s2": 0.75198905
+      },
+      "unrestricted": true
+    },
+    "symmetry": {
+      "@class": "SymmetryData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "n_reps": 6,
+      "reps": [
+        "a1'",
+        "a2'",
+        "e'",
+        "a1\"",
+        "a2\"",
+        "e\""
+      ],
+      "symbol": "d3h"
+    },
+    "tm": {
+      "@class": "TurbomoleData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "build": null,
+      "executable": "ridft",
+      "version": "7.9"
+    }
+  },
+  "gradient": {
+    "@class": "GradOutput",
+    "@module": "turbomoleio.output.files",
+    "@version": "1.6.0",
+    "dielectric": [
+      [
+        -4.3e-05,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -4.3e-05,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "gradients": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        6.026713e-06,
+        -1.043857e-05,
+        0.0
+      ],
+      [
+        6.026713e-06,
+        1.043857e-05,
+        0.0
+      ],
+      [
+        -1.205343e-05,
+        0.0,
+        0.0
+      ]
+    ],
+    "memory": 1,
+    "run": {
+      "@class": "RunData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "cpu_time": 0.04,
+      "end_time": {
+        "@class": "datetime",
+        "@module": "datetime",
+        "string": "2025-06-09 21:51:45.035000"
+      },
+      "host": "computermachine",
+      "start_time": {
+        "@class": "datetime",
+        "@module": "datetime",
+        "string": "2025-06-09 21:51:44.996000"
+      },
+      "wall_time": 0.05
+    },
+    "tm": {
+      "@class": "TurbomoleData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "build": null,
+      "executable": "rdgrad",
+      "version": "7.9"
+    }
+  },
+  "relax": {
+    "@class": "StatptOutput",
+    "@module": "turbomoleio.output.files",
+    "@version": "1.6.0",
+    "convergence": {
+      "@class": "RelaxConvergenceData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "energy_change": {
+        "conv": true,
+        "thr": 1e-06,
+        "value": 5e-07
+      },
+      "max_displ": {
+        "conv": true,
+        "thr": 0.001,
+        "value": 2.84e-05
+      },
+      "max_grad": {
+        "conv": true,
+        "thr": 0.001,
+        "value": 2.09e-05
+      },
+      "rms_displ": {
+        "conv": true,
+        "thr": 0.0005,
+        "value": 2.84e-05
+      },
+      "rms_grad": {
+        "conv": true,
+        "thr": 0.0005,
+        "value": 2.09e-05
+      }
+    },
+    "gradients": {
+      "@class": "RelaxGradientsData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "max_internal": null,
+      "norm_cartesian": 2.08771e-05,
+      "norm_internal": 2.08771e-05
+    },
+    "info": {
+      "@class": "StatptData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "final_step_radius": null,
+      "hessian_update_method": "BFGS",
+      "init_trust_radius": 0.15,
+      "max_trust_radius": 0.3,
+      "min_grad_norm_for_gdiis": 0.01,
+      "min_trust_radius": 0.001,
+      "prev_steps_for_gdiis": 5,
+      "thr_energy_change": 1e-06,
+      "thr_max_displ": 0.001,
+      "thr_max_grad": 0.001,
+      "thr_rms_displ": 0.0005,
+      "thr_rms_grad": 0.0005,
+      "use_defaults": true
+    },
+    "run": {
+      "@class": "RunData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "cpu_time": 0.01,
+      "end_time": {
+        "@class": "datetime",
+        "@module": "datetime",
+        "string": "2025-06-09 21:51:45.062000"
+      },
+      "host": "computermachine",
+      "start_time": {
+        "@class": "datetime",
+        "@module": "datetime",
+        "string": "2025-06-09 21:51:45.059000"
+      },
+      "wall_time": 0.01
+    },
+    "tm": {
+      "@class": "TurbomoleData",
+      "@module": "turbomoleio.output.data",
+      "@version": "1.6.0",
+      "build": null,
+      "executable": "statpt",
+      "version": "7.9"
+    }
+  }
+}

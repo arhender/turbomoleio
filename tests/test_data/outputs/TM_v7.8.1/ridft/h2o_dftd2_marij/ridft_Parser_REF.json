@@ -1,0 +1,210 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": {
+    "aux_basis_per_specie": {
+      "h": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "basis_per_specie": {
+      "h": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "number_scf_aux_basis_func": 47,
+    "number_scf_basis_func": 18
+  },
+  "centers": {
+    "center_of_charge": [
+      0.0,
+      0.0,
+      -0.50790525
+    ],
+    "center_of_mass": [
+      0.0,
+      0.0,
+      -0.60378908
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      8.0,
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        -0.72557892
+      ],
+      [
+        1.41713421,
+        0.0,
+        0.36278946
+      ],
+      [
+        -1.41713421,
+        0.0,
+        0.36278946
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "o",
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": {
+    "functional_msg": "B-P86 functional\n exchange:    LDA + Becke (B88)\n correlation: LDA (VWN) + Perdew (P86)",
+    "functional_name": "b-p",
+    "functional_type": "GGA",
+    "gridpoints": 302,
+    "spherical_gridsize": 3,
+    "xcfun": null
+  },
+  "dftd": {
+    "correction": "D2",
+    "en_corr": -3.4691e-05
+  },
+  "egrad_excited_state": null,
+  "electrostatic_moments": {
+    "charge": -0.0,
+    "dipole": {
+      "moment": [
+        0.0,
+        -0.0,
+        0.83303
+      ],
+      "norm": 0.833
+    },
+    "quadrupole": {
+      "anisotropy": 2.063359,
+      "moment": [
+        [
+          -3.238776,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -5.263831,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -5.338416
+        ]
+      ],
+      "trace": -13.841021999999999
+    },
+    "unrestricted_electrons": null
+  },
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "ridft",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:02.611000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": {
+    "integral_neglect_threshold": 1.8e-10,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": {
+    "conv_one_e_en": 0.0001,
+    "conv_tot_en": 1e-07,
+    "diis": true,
+    "diis_error_vect": "FDS-SDF",
+    "n_occupied_orbitals": 5,
+    "orbital_characterization": "expanded",
+    "restart_file": null,
+    "virtual_orbital_shift_limit": 0.1,
+    "virtual_orbital_shift_on": true
+  },
+  "rdgrad_memory": null,
+  "relax_conv_info": null,
+  "relax_gradient_values": null,
+  "relax_info": null,
+  "rij_info": {
+    "marij": true,
+    "ricore": 500,
+    "rij_memory": 1,
+    "rik": false
+  },
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": {
+    "kinetic_energy": 75.98693877248,
+    "potential_energy": -152.32997964581,
+    "total_energy": -76.34304087332,
+    "virial_theorem": 1.99533550017,
+    "wavefunction_norm": 1.0
+  },
+  "scf_iterations": {
+    "converged": true,
+    "dampings": [
+      0.3,
+      0.25,
+      0.2,
+      0.25,
+      0.3,
+      0.15,
+      0.1,
+      0.15
+    ],
+    "energies": [
+      -76.143984807101,
+      -76.317816923608,
+      -76.337678025157,
+      -76.342530285717,
+      -76.342755527926,
+      -76.34276301244,
+      -76.342763176485,
+      -76.343040873323
+    ],
+    "first_index": 1,
+    "n_steps": 8
+  },
+  "statpt_info": null,
+  "symmetry": {
+    "n_reps": 1,
+    "reps": [
+      "a"
+    ],
+    "symbol": "c1"
+  },
+  "timings": {
+    "cpu_time": 0.07,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:02.673000"
+    },
+    "wall_time": 0.07
+  }
+}

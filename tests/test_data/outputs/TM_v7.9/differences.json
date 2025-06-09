@@ -1,0 +1,2973 @@
+{
+  "aoforce": {
+    "aceton_full": {
+      "aoforce_AoforceOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "numerical_integration",
+              "<class 'dict'>"
+            ],
+            [
+              "core_memory_dft",
+              "<class 'int'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 497\n - Test number: 997\n"
+        ]
+      ],
+      "aoforce_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "aoforce_numerical_integration",
+              "<class 'dict'>"
+            ],
+            [
+              "memory",
+              "<class 'dict'>"
+            ],
+            [
+              "core_memory_dft",
+              "<class 'int'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 497\n - Test number: 997\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 0.06477864201545325\n - Test number: 0.06006279627305867\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 0.003108084414754305\n - Test number: 0.003405041713813654\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_escf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "max_cao_basis_vectors",
+              "<class 'int'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 12082\n - Test number: 24165\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_escf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "max_core_mem",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 500.0\n - Test number: 1000.0\n"
+        ]
+      ]
+    }
+  },
+  "dscf": {
+    "h2o_uhf": {
+      "dscf_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "dscf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "nh3_dftd1": {
+      "dscf_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "dscf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "aceton_dftd3_tzvp": {
+      "dscf_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "dscf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "nh3_cosmo_fermi": {
+      "dscf_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "dscf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "h2o_std": {
+      "dscf_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "dscf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    }
+  },
+  "egrad": {
+    "h2o_sym": {
+      "egrad_EgradOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "max_cao_basis_vectors",
+              "<class 'int'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 151353\n - Test number: 302706\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "max_core_mem",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 500.0\n - Test number: 1000.0\n"
+        ]
+      ],
+      "egrad_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_escf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "max_cao_basis_vectors",
+              "<class 'int'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 151353\n - Test number: 302706\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_escf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "max_core_mem",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 500.0\n - Test number: 1000.0\n"
+        ]
+      ]
+    },
+    "h3cbr_nosym": {
+      "egrad_EgradOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 2.121536783270742e-16\n - Test number: 3.191616030394474e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.167025156131811e-15\n - Test number: 2.268392558366258e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.027949995238671e-15\n - Test number: 9.49973066623639e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -4.388587607412937e-15\n - Test number: -1.284415519880417e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              4,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.299033172679367e-14\n - Test number: 1.272120211211936e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              5,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -1.023883498043832e-15\n - Test number: -3.525911169416447e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              6,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.111812487360173e-15\n - Test number: -9.970847997392215e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              7,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -1.284235064493069e-14\n - Test number: -1.194000325038419e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              8,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -3.753893460566976e-16\n - Test number: -2.398302783729732e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              9,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -6.478487012366631e-16\n - Test number: -8.533473730627471e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "max_cao_basis_vectors",
+              "<class 'int'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 19574\n - Test number: 39149\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "max_core_mem",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 500.0\n - Test number: 1000.0\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[-0.09995971, -2.03379e-10, 0.06344875], [0.015751, -0.0422028, 0.02783363], [0.015751, 0.0422028, 0.02783363], [0.07003746, 1.305582e-10, 0.06391954], [-0.00157236, 2.935942e-11, -0.1830458]]\n - Test array: [[-0.09995971, -9.277268e-11, 0.06344875], [0.015751, -0.0422028, 0.02783363], [0.015751, 0.0422028, 0.02783363], [0.07003746, 6.188091e-11, 0.06391954], [-0.00157236, 7.53464e-12, -0.1830458]]"
+        ]
+      ],
+      "egrad_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 2.121536783270742e-16\n - Test number: 3.191616030394474e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.167025156131811e-15\n - Test number: 2.268392558366258e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.027949995238671e-15\n - Test number: 9.49973066623639e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -4.388587607412937e-15\n - Test number: -1.284415519880417e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              4,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.299033172679367e-14\n - Test number: 1.272120211211936e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              5,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -1.023883498043832e-15\n - Test number: -3.525911169416447e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              6,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.111812487360173e-15\n - Test number: -9.970847997392215e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              7,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -1.284235064493069e-14\n - Test number: -1.194000325038419e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              8,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -3.753893460566976e-16\n - Test number: -2.398302783729732e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_excitations",
+              "<class 'dict'>"
+            ],
+            [
+              "a",
+              "<class 'list'>"
+            ],
+            [
+              9,
+              "<class 'dict'>"
+            ],
+            [
+              "rot_stre",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: -6.478487012366631e-16\n - Test number: -8.533473730627471e-16\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[-0.09995971, -2.03379e-10, 0.06344875], [0.015751, -0.0422028, 0.02783363], [0.015751, 0.0422028, 0.02783363], [0.07003746, 1.305582e-10, 0.06391954], [-0.00157236, 2.935942e-11, -0.1830458]]\n - Test array: [[-0.09995971, -9.277268e-11, 0.06344875], [0.015751, -0.0422028, 0.02783363], [0.015751, 0.0422028, 0.02783363], [0.07003746, 6.188091e-11, 0.06391954], [-0.00157236, 7.53464e-12, -0.1830458]]"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_escf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "max_cao_basis_vectors",
+              "<class 'int'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 19574\n - Test number: 39149\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_escf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "max_core_mem",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 500.0\n - Test number: 1000.0\n"
+        ]
+      ]
+    }
+  },
+  "escf": {
+    "no3_ridft_cosmo": {
+      "escf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    },
+    "h2o_ridft_rpat": {
+      "escf_EscfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.011520584038246e-15\n - Test number: 9.454812244975115e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.13733843684606e-14\n - Test number: 8.556175366406882e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 8.085990461558809e-14\n - Test number: 7.852607904059275e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.011520584038246e-15\n - Test number: 9.454812244975115e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 8.614912036219924e-14\n - Test number: 1.909213916451987e-13\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.13733843684606e-14\n - Test number: 8.556175366406882e-14\n"
+        ]
+      ],
+      "escf_EscfOnlyOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.011520584038246e-15\n - Test number: 9.454812244975115e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.13733843684606e-14\n - Test number: 8.556175366406882e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 8.085990461558809e-14\n - Test number: 7.852607904059275e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.011520584038246e-15\n - Test number: 9.454812244975115e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 8.614912036219924e-14\n - Test number: 1.909213916451987e-13\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf",
+              "<class 'dict'>"
+            ],
+            [
+              "iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.13733843684606e-14\n - Test number: 8.556175366406882e-14\n"
+        ]
+      ],
+      "escf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.011520584038246e-15\n - Test number: 9.454812244975115e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.13733843684606e-14\n - Test number: 8.556175366406882e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              0,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 8.085990461558809e-14\n - Test number: 7.852607904059275e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.011520584038246e-15\n - Test number: 9.454812244975115e-15\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 8.614912036219924e-14\n - Test number: 1.909213916451987e-13\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "escf_iterations",
+              "<class 'dict'>"
+            ],
+            [
+              "steps",
+              "<class 'list'>"
+            ],
+            [
+              1,
+              "<class 'list'>"
+            ],
+            [
+              3,
+              "<class 'list'>"
+            ],
+            [
+              2,
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 6.13733843684606e-14\n - Test number: 8.556175366406882e-14\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    },
+    "Al6_columns": {
+      "escf_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    }
+  },
+  "grad": {
+    "h2o_std": {
+      "grad_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    }
+  },
+  "jobex": {
+    "no3_ridft": {
+      "jobex_JobexOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "jobex_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "h2o_mp2_ridft_rimp2": {
+      "jobex_JobexOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "mp2",
+              "<class 'dict'>"
+            ]
+          ],
+          ">>>REF_DICT_TEST_OTHER<<<\nReference object is a <class 'dict'>, tested object is a <class 'NoneType'>"
+        ]
+      ],
+      "jobex_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[-3.811372e-13, -3.860682e-14, 1.340543e-07], [7.836973e-08, 1.836216e-14, -6.702727e-08], [-7.836936e-08, 2.024465e-14, -6.70275e-08]]\n - Test array: [[-6.78263e-13, 3.295886e-14, 1.340545e-07], [7.83699e-08, -1.703675e-14, -6.702689e-08], [-7.836922e-08, -1.592211e-14, -6.70273e-08]]"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "mp2_results",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>REF_NUMBER_TEST_OTHER<<<\nReference object is a number (<class 'float'>), tested object is not a number (<class 'NoneType'>)"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "h2o_dscf": {
+      "jobex_JobexOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "jobex_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "h2o_mp2_dscf_mpgrad": {
+      "jobex_JobexOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "jobex_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "h2o_mp2_dscf_mpgrad_cosmo_nosym": {
+      "jobex_JobexOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "relax",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'dict'>"
+            ],
+            [
+              "norm_internal",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.05539e-05\n - Test number: 1.0554e-05\n"
+        ]
+      ],
+      "jobex_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[-6.801837e-07, 5.158911e-07, -2.332899e-07], [3.653321e-07, -5.827618e-06, -1.199593e-06], [3.148516e-07, 5.311727e-06, 1.432827e-06]]\n - Test array: [[-6.801836e-07, 5.158911e-07, -2.332892e-07], [3.653318e-07, -5.827618e-06, -1.199594e-06], [3.148519e-07, 5.311727e-06, 1.432827e-06]]"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "relax_gradient_values",
+              "<class 'dict'>"
+            ],
+            [
+              "norm_internal",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>NUMBERS_DIFFER<<<\n - Reference number: 1.05539e-05\n - Test number: 1.0554e-05\n"
+        ]
+      ]
+    }
+  },
+  "mpgrad": {
+    "h2o_std_mp2": {
+      "mpgrad_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    },
+    "h2o_std_mp2_gradient": {
+      "mpgrad_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[0.0, -1.141917e-13, 0.02743353], [-0.02101973, 5.77885e-14, -0.01371676], [0.02101973, 5.64032e-14, -0.01371676]]\n - Test array: [[0.0, 0.0, 0.02743353], [-0.02101973, 0.0, -0.01371676], [0.02101973, 0.0, -0.01371676]]"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    }
+  },
+  "rdgrad": {
+    "h2o_dftd3-bj": {
+      "rdgrad_GradOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[7.307738e-14, 9.311052e-14, 0.04147683], [-0.02702341, -4.001707e-14, -0.0207218], [0.02702341, -1.287668e-14, -0.0207218]]\n - Test array: [[6.894485e-14, 4.32987e-14, 0.04147683], [-0.02702341, -1.349268e-14, -0.0207218], [0.02702341, 1.24397e-14, -0.0207218]]"
+        ]
+      ],
+      "rdgrad_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[7.307738e-14, 9.311052e-14, 0.04147683], [-0.02702341, -4.001707e-14, -0.0207218], [0.02702341, -1.287668e-14, -0.0207218]]\n - Test array: [[6.894485e-14, 4.32987e-14, 0.04147683], [-0.02702341, -1.349268e-14, -0.0207218], [0.02702341, 1.24397e-14, -0.0207218]]"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    }
+  },
+  "relax": {
+    "h2o_cartesian": {
+      "relax_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    },
+    "h2o_internal": {
+      "relax_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    }
+  },
+  "ricc2": {
+    "h2o_std_mp2": {
+      "ricc2_Ricc2Output": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "mp2",
+              "<class 'dict'>"
+            ]
+          ],
+          ">>>REF_DICT_TEST_OTHER<<<\nReference object is a <class 'dict'>, tested object is a <class 'NoneType'>"
+        ]
+      ],
+      "ricc2_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[0.0, -1.104883e-13, 0.02753523], [-0.02103089, 5.763155e-14, -0.01376761], [0.02103089, 5.285677e-14, -0.01376761]]\n - Test array: [[0.0, 0.0, 0.02753523], [-0.02103089, 0.0, -0.01376761], [0.02103089, 0.0, -0.01376761]]"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "mp2_results",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>REF_NUMBER_TEST_OTHER<<<\nReference object is a number (<class 'float'>), tested object is not a number (<class 'NoneType'>)"
+        ]
+      ]
+    }
+  },
+  "ridft": {
+    "h2o_dftd3-bj_not_conv": {
+      "ridft_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "ridft_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "b28_many_irreps": {
+      "ridft_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "ridft_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "h2o_dftd2_marij": {
+      "ridft_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "ridft_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "nh3_cosmo_solvent": {
+      "ridft_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "ridft_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    },
+    "nh3_rijk_libxc_m06": {
+      "ridft_ScfOutput": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "scf",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ],
+      "ridft_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "pre_scf_run",
+              "<class 'dict'>"
+            ],
+            [
+              "restart_file",
+              "<class 'NoneType'>"
+            ]
+          ],
+          ">>>TEST_STRING_REF_OTHER<<<\nReference object is a <class 'NoneType'>, tested object is a <class 'str'>"
+        ]
+      ]
+    }
+  },
+  "rimp2": {
+    "h2o_std_mp2": {
+      "rimp2_MP2Output": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "results",
+              "<class 'dict'>"
+            ]
+          ],
+          ">>>REF_DICT_TEST_OTHER<<<\nReference object is a <class 'dict'>, tested object is a <class 'NoneType'>"
+        ]
+      ],
+      "rimp2_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "gradient",
+              "<class 'dict'>"
+            ],
+            [
+              "gradients",
+              "<class 'list'>"
+            ]
+          ],
+          ">>>ARRAYS_DIFFER<<<\nReference and test arrays are not equal to tolerance rtol=1e-07, atol=0.0\n - Reference array: [[0.0, -1.104883e-13, 0.02753523], [-0.02103089, 5.763155e-14, -0.01376761], [0.02103089, 5.285677e-14, -0.01376761]]\n - Test array: [[0.0, 0.0, 0.02753523], [-0.02103089, 0.0, -0.01376761], [0.02103089, 0.0, -0.01376761]]"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ],
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "mp2_results",
+              "<class 'dict'>"
+            ],
+            [
+              "energy",
+              "<class 'float'>"
+            ]
+          ],
+          ">>>REF_NUMBER_TEST_OTHER<<<\nReference object is a number (<class 'float'>), tested object is not a number (<class 'NoneType'>)"
+        ]
+      ]
+    }
+  },
+  "riper": {
+    "h_chain": {
+      "riper_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    },
+    "graphene": {
+      "riper_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    },
+    "bulk_LiH": {
+      "riper_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    }
+  },
+  "statpt": {
+    "aceton_cartesian": {
+      "statpt_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    },
+    "h3cbr_internal": {
+      "statpt_Parser": [
+        [
+          [
+            [
+              "root",
+              "<class 'dict'>"
+            ],
+            [
+              "header",
+              "<class 'dict'>"
+            ],
+            [
+              "tm_version",
+              "<class 'str'>"
+            ]
+          ],
+          ">>>STRINGS_DIFFER<<<\n - Reference string: 7.8.1\n - Test string: 7.9\n"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": null,
+  "centers": {
+    "center_of_charge": [
+      1.88972612,
+      0.5,
+      0.5
+    ],
+    "center_of_mass": [
+      1.88972612,
+      0.5,
+      0.5
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        0.94486306,
+        0.5,
+        0.5
+      ],
+      [
+        2.83458919,
+        0.5,
+        0.5
+      ]
+    ],
+    "isotopes": [
+      0,
+      0
+    ],
+    "species": [
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": null,
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "riper",
+    "host": "computermachine",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:53.659000"
+    },
+    "tm_build": null,
+    "tm_version": "7.9"
+  },
+  "integral": null,
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": {
+    "direct_space_vectors": [
+      [
+        3.77945225,
+        0.0,
+        0.0
+      ]
+    ],
+    "periodicity": 1,
+    "reciprocal_space_vectors": [
+      [
+        1.66245924,
+        -0.0,
+        -0.0
+      ]
+    ],
+    "shortest_interatomic_distance": 1.8897,
+    "tm_lattice_params": [
+      3.77945225
+    ]
+  },
+  "pre_escf_run": null,
+  "pre_scf_run": null,
+  "rdgrad_memory": null,
+  "relax_conv_info": null,
+  "relax_gradient_values": null,
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": {
+    "coulomb_energy": -1.5316608497,
+    "free_energy": -1.1595574974,
+    "kinetic_energy": 1.0583304493,
+    "sigma0_energy": -1.1595574974,
+    "total_energy": -1.1595574974,
+    "ts_energy": -0.0,
+    "xc_energy": -0.686227097
+  },
+  "s2": null,
+  "scf_energies": null,
+  "scf_iterations": null,
+  "statpt_info": null,
+  "symmetry": null,
+  "timings": {
+    "cpu_time": 0.2,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2025-06-09 21:51:53.760000"
+    },
+    "wall_time": 0.11
+  }
+}

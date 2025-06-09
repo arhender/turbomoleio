@@ -1,0 +1,162 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": null,
+  "centers": {
+    "center_of_charge": [
+      0.0,
+      0.0,
+      2.50352177
+    ],
+    "center_of_mass": [
+      0.0,
+      0.0,
+      2.69459223
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      6.0,
+      1.0,
+      1.0,
+      1.0,
+      35.0
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        -0.34653371
+      ],
+      [
+        0.97212285,
+        1.68376616,
+        -0.98142628
+      ],
+      [
+        0.97212285,
+        -1.68376616,
+        -0.98142628
+      ],
+      [
+        -1.94424569,
+        0.0,
+        -0.98142628
+      ],
+      [
+        0.0,
+        0.0,
+        3.29081255
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "c",
+      "h",
+      "h",
+      "h",
+      "br"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": null,
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "statpt",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:22.841000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": null,
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": null,
+  "rdgrad_memory": null,
+  "relax_conv_info": {
+    "energy_change": {
+      "conv": false,
+      "thr": 1e-06,
+      "value": 2614.0056596
+    },
+    "max_displ": {
+      "conv": false,
+      "thr": 0.001,
+      "value": 0.064963
+    },
+    "max_grad": {
+      "conv": false,
+      "thr": 0.001,
+      "value": 0.0289148
+    },
+    "rms_displ": {
+      "conv": false,
+      "thr": 0.0005,
+      "value": 0.0403772
+    },
+    "rms_grad": {
+      "conv": false,
+      "thr": 0.0005,
+      "value": 0.0180857
+    }
+  },
+  "relax_gradient_values": {
+    "max_internal": null,
+    "norm_cartesian": 0.0320244,
+    "norm_internal": 0.0313254
+  },
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": null,
+  "scf_iterations": null,
+  "statpt_info": {
+    "final_step_radius": 0.0699353,
+    "hessian_update_method": "BFGS",
+    "init_trust_radius": 0.15,
+    "max_trust_radius": 0.3,
+    "min_grad_norm_for_gdiis": 0.01,
+    "min_trust_radius": 0.001,
+    "prev_steps_for_gdiis": 5,
+    "thr_energy_change": 1e-06,
+    "thr_max_displ": 0.001,
+    "thr_max_grad": 0.001,
+    "thr_rms_displ": 0.0005,
+    "thr_rms_grad": 0.0005,
+    "use_defaults": true
+  },
+  "symmetry": null,
+  "timings": {
+    "cpu_time": 0.01,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:22.844000"
+    },
+    "wall_time": 0.01
+  }
+}

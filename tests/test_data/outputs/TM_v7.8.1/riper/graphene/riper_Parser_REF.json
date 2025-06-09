@@ -1,0 +1,134 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": null,
+  "centers": {
+    "center_of_charge": [
+      1.16615753,
+      2.01984413,
+      0.5
+    ],
+    "center_of_mass": [
+      1.16615753,
+      2.01984413,
+      0.5
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      6.0,
+      6.0
+    ],
+    "coords": [
+      [
+        -4e-08,
+        2.69312551,
+        0.5
+      ],
+      [
+        2.33231511,
+        1.34656276,
+        0.5
+      ]
+    ],
+    "isotopes": [
+      0,
+      0
+    ],
+    "species": [
+      "c",
+      "c"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": null,
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "riper",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:03.478000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": null,
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": {
+    "direct_space_vectors": [
+      [
+        4.66463026,
+        0.0,
+        0.0
+      ],
+      [
+        -2.33231519,
+        4.03968827,
+        0.0
+      ]
+    ],
+    "periodicity": 2,
+    "reciprocal_space_vectors": [
+      [
+        1.34698464,
+        0.77768197,
+        -0.0
+      ],
+      [
+        0.0,
+        1.5553639,
+        -0.0
+      ]
+    ],
+    "shortest_interatomic_distance": 2.6931,
+    "tm_lattice_params": [
+      4.66463026,
+      4.66463026,
+      120.0
+    ]
+  },
+  "pre_escf_run": null,
+  "pre_scf_run": null,
+  "rdgrad_memory": null,
+  "relax_conv_info": null,
+  "relax_gradient_values": null,
+  "relax_info": null,
+  "rij_info": null,
+  "riper_scf_energies": {
+    "coulomb_energy": -140.6546428011,
+    "free_energy": -76.2143772794,
+    "kinetic_energy": 75.3114096158,
+    "sigma0_energy": -76.2143772794,
+    "total_energy": -76.2143772794,
+    "ts_energy": -0.0,
+    "xc_energy": -10.8711440941
+  },
+  "s2": null,
+  "scf_energies": null,
+  "scf_iterations": null,
+  "statpt_info": null,
+  "symmetry": null,
+  "timings": {
+    "cpu_time": 6.86,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:10.337000"
+    },
+    "wall_time": 6.87
+  }
+}

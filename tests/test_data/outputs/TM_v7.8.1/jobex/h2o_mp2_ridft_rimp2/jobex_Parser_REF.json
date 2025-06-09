@@ -1,0 +1,269 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": {
+    "aux_basis_per_specie": {
+      "h": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "basis_per_specie": {
+      "h": "def-SV(P)",
+      "o": "def-SV(P)"
+    },
+    "number_scf_aux_basis_func": 113,
+    "number_scf_basis_func": 18
+  },
+  "centers": {
+    "center_of_charge": [
+      0.0,
+      0.0,
+      -0.51919183
+    ],
+    "center_of_mass": [
+      0.0,
+      0.0,
+      -0.61720638
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      8.0,
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        -0.74170261
+      ],
+      [
+        1.45584606,
+        0.0,
+        0.3708513
+      ],
+      [
+        -1.45584606,
+        0.0,
+        0.3708513
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "o",
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": null,
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": {
+    "charge": -0.0,
+    "dipole": {
+      "moment": [
+        0.0,
+        0.0,
+        0.895118
+      ],
+      "norm": 0.8951
+    },
+    "quadrupole": {
+      "anisotropy": 2.278911,
+      "moment": [
+        [
+          -3.097627,
+          -0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -5.330535,
+          -0.0
+        ],
+        [
+          0.0,
+          -0.0,
+          -5.419912
+        ]
+      ],
+      "trace": -13.848074999999998
+    },
+    "unrestricted_electrons": null
+  },
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": {
+    "dielectric": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "gradients": [
+      [
+        -3.811372e-13,
+        -3.860682e-14,
+        1.340543e-07
+      ],
+      [
+        7.836973e-08,
+        1.836216e-14,
+        -6.702727e-08
+      ],
+      [
+        -7.836936e-08,
+        2.024465e-14,
+        -6.70275e-08
+      ]
+    ]
+  },
+  "header": {
+    "executable": "statpt",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:39:56.588000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": {
+    "integral_neglect_threshold": 1.8e-10,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": -76.1263574831
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": {
+    "conv_one_e_en": 0.0001,
+    "conv_tot_en": 1e-07,
+    "diis": true,
+    "diis_error_vect": "FDS-SDF",
+    "n_occupied_orbitals": 5,
+    "orbital_characterization": "scfconv=7",
+    "restart_file": null,
+    "virtual_orbital_shift_limit": 0.1,
+    "virtual_orbital_shift_on": true
+  },
+  "rdgrad_memory": null,
+  "relax_conv_info": {
+    "energy_change": {
+      "conv": true,
+      "thr": 1e-06,
+      "value": 0.0
+    },
+    "max_displ": {
+      "conv": true,
+      "thr": 0.001,
+      "value": 2.3e-05
+    },
+    "max_grad": {
+      "conv": true,
+      "thr": 0.001,
+      "value": 1.67e-05
+    },
+    "rms_displ": {
+      "conv": true,
+      "thr": 0.0005,
+      "value": 9.5e-06
+    },
+    "rms_grad": {
+      "conv": true,
+      "thr": 0.0005,
+      "value": 7.7e-06
+    }
+  },
+  "relax_gradient_values": {
+    "max_internal": null,
+    "norm_cartesian": 2.30528e-05,
+    "norm_internal": null
+  },
+  "relax_info": null,
+  "rij_info": {
+    "marij": false,
+    "ricore": 500,
+    "rij_memory": 1,
+    "rik": true
+  },
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": {
+    "kinetic_energy": 75.83507472842,
+    "potential_energy": -151.772729009,
+    "total_energy": -75.93765428058,
+    "virial_theorem": 1.99864916091,
+    "wavefunction_norm": 1.0
+  },
+  "scf_iterations": {
+    "converged": true,
+    "dampings": [
+      0.3,
+      0.3,
+      0.35
+    ],
+    "energies": [
+      -75.937654280376,
+      -75.937654280551,
+      -75.937654280584
+    ],
+    "first_index": 1,
+    "n_steps": 3
+  },
+  "statpt_info": {
+    "final_step_radius": null,
+    "hessian_update_method": "BFGS",
+    "init_trust_radius": 0.15,
+    "max_trust_radius": 0.3,
+    "min_grad_norm_for_gdiis": 0.01,
+    "min_trust_radius": 0.001,
+    "prev_steps_for_gdiis": 5,
+    "thr_energy_change": 1e-06,
+    "thr_max_displ": 0.001,
+    "thr_max_grad": 0.001,
+    "thr_rms_displ": 0.0005,
+    "thr_rms_grad": 0.0005,
+    "use_defaults": true
+  },
+  "symmetry": {
+    "n_reps": 1,
+    "reps": [
+      "a"
+    ],
+    "symbol": "c1"
+  },
+  "timings": {
+    "cpu_time": 0.01,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:39:56.590000"
+    },
+    "wall_time": 0.01
+  }
+}

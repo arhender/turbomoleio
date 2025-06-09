@@ -1,0 +1,217 @@
+{
+  "all_done": true,
+  "aoforce_analysis": null,
+  "aoforce_numerical_integration": null,
+  "basis": {
+    "aux_basis_per_specie": {
+      "h": "def-SV(P)",
+      "n": "def-SV(P)"
+    },
+    "basis_per_specie": {
+      "h": "def-SV(P)",
+      "n": "def-SV(P)"
+    },
+    "number_scf_aux_basis_func": 131,
+    "number_scf_basis_func": 20
+  },
+  "centers": {
+    "center_of_charge": [
+      -0.0,
+      0.0,
+      -0.08907541
+    ],
+    "center_of_mass": [
+      -0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "coordinates": {
+    "charges": [
+      7.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "coords": [
+      [
+        0.0,
+        0.0,
+        0.12917062
+      ],
+      [
+        1.75612466,
+        0.0,
+        -0.59831614
+      ],
+      [
+        -0.87806233,
+        1.52084857,
+        -0.59831614
+      ],
+      [
+        -0.87806233,
+        -1.52084857,
+        -0.59831614
+      ]
+    ],
+    "isotopes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "species": [
+      "n",
+      "h",
+      "h",
+      "h"
+    ]
+  },
+  "cosmo_header": null,
+  "cosmo_results": null,
+  "density_functional_data": {
+    "functional_msg": "Name of XC-Functional: Minnesota M06 hybrid exchange functional\n HF exchange scaling factor =    0.27000\n [1] Y. Zhao and D. G. Truhlar.,  Theor. Chem. Acc. 120, 215 (2008)",
+    "functional_name": "m06",
+    "functional_type": "MHYB",
+    "gridpoints": 302,
+    "spherical_gridsize": 3,
+    "xcfun": null
+  },
+  "dftd": null,
+  "egrad_excited_state": null,
+  "electrostatic_moments": {
+    "charge": -0.0,
+    "dipole": {
+      "moment": [
+        0.0023,
+        -0.0,
+        -0.744021
+      ],
+      "norm": 0.744
+    },
+    "quadrupole": {
+      "anisotropy": 1.754798,
+      "moment": [
+        [
+          -4.552874,
+          0.0,
+          0.001177
+        ],
+        [
+          0.0,
+          -4.554608,
+          0.0
+        ],
+        [
+          0.001177,
+          0.0,
+          -6.308538
+        ]
+      ],
+      "trace": -15.416018999999999
+    },
+    "unrestricted_electrons": null
+  },
+  "escf_excitations": null,
+  "escf_gs_total_en": null,
+  "escf_iterations": null,
+  "fermi": null,
+  "gradient": null,
+  "header": {
+    "executable": "ridft",
+    "host": "dwa-Precision-3590",
+    "start_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:02.764000"
+    },
+    "tm_build": null,
+    "tm_version": "7.8.1"
+  },
+  "integral": {
+    "integral_neglect_threshold": 1.6e-10,
+    "thime": 5,
+    "thize": 1e-05
+  },
+  "is_uhf": false,
+  "mp2_results": {
+    "energy": null
+  },
+  "periodicity_data": null,
+  "pre_escf_run": null,
+  "pre_scf_run": {
+    "conv_one_e_en": 0.0001,
+    "conv_tot_en": 1e-07,
+    "diis": true,
+    "diis_error_vect": "FDS-SDF",
+    "n_occupied_orbitals": 5,
+    "orbital_characterization": "expanded",
+    "restart_file": null,
+    "virtual_orbital_shift_limit": 0.1,
+    "virtual_orbital_shift_on": true
+  },
+  "rdgrad_memory": null,
+  "relax_conv_info": null,
+  "relax_gradient_values": null,
+  "relax_info": null,
+  "rij_info": {
+    "marij": false,
+    "ricore": 500,
+    "rij_memory": 1,
+    "rik": true
+  },
+  "riper_scf_energies": null,
+  "s2": null,
+  "scf_energies": {
+    "kinetic_energy": 56.12047867503,
+    "potential_energy": -112.57378954082,
+    "total_energy": -56.45331086579,
+    "virial_theorem": 1.99410429281,
+    "wavefunction_norm": 1.0
+  },
+  "scf_iterations": {
+    "converged": true,
+    "dampings": [
+      0.3,
+      0.25,
+      0.2,
+      0.25,
+      0.3,
+      0.15,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "energies": [
+      -56.284679298172,
+      -56.430416233621,
+      -56.451616450644,
+      -56.454045176285,
+      -56.454566001146,
+      -56.454586528094,
+      -56.454588600419,
+      -56.454588710087,
+      -56.453310865787
+    ],
+    "first_index": 1,
+    "n_steps": 9
+  },
+  "statpt_info": null,
+  "symmetry": {
+    "n_reps": 1,
+    "reps": [
+      "a"
+    ],
+    "symbol": "c1"
+  },
+  "timings": {
+    "cpu_time": 0.12,
+    "end_time": {
+      "@class": "datetime",
+      "@module": "datetime",
+      "string": "2024-09-06 12:40:02.881000"
+    },
+    "wall_time": 0.13
+  }
+}
