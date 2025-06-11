@@ -1971,7 +1971,94 @@ class Parser:
 
                 single_excitations_list.append(exc_data)
 
+
             excited_data[irrep] = single_excitations_list
+
+
+        # Parse Two-Photon Absorption Excitations (if present)
+
+        r_tpa = (
+            r"Two-photon absorption amplitudes for transition to the"
+            + r".*?(?=(?:Two-photon absorption amplitudes)|-{5,})"
+        )
+
+        r_tpa_stateno = r"to the \s+([0-9]+)[\w]{2}"
+        regex_tpa_stateno = re.compile(r_tpa_stateno)
+
+        r_tpa_irrep = (
+            r"electronic excitation in symmetry ([" 
+            + irrep_re_group 
+            + "]+)\s"
+        )
+        regex_tpa_irrep = re.compile(r_tpa_irrep)
+
+        r_tpa_photons = (
+            r"omega_[0-9]+\s+("
+            + float_number_all_re
+            + ")"
+        )
+        regex_tpa_photons = re.compile(r_tpa_photons)
+
+        r_tpa_tensor = (
+            r"(xx.*?zz\s+"
+            + float_number_all_re
+            + r")"
+        )
+        regex_tpa_tensor = re.compile(r_tpa_tensor, re.DOTALL)
+
+        r_tpa_strength = (
+            r"transition strength \[a.u.\]:\s+("
+            + float_number_all_re
+            + ")"
+        )
+        regex_tpa_strength = re.compile(r_tpa_strength)
+
+        match_tpa = re.findall(r_tpa, self.string, re.DOTALL)
+        if match_tpa:
+            for tpa_exc in match_tpa:
+                tpa_dat = dict(
+                    tpa_photons = None,
+                    tpa_tensor = None,
+                    tpa_strength = None,
+                )
+                match_stateno = regex_tpa_stateno.search(tpa_exc)
+                if match_stateno:
+                    stateindex = convert_int(match_stateno.group(1)) - 1
+
+                match_irrep = regex_tpa_irrep.search(tpa_exc)
+                if match_irrep: # pragma: no branch
+                    tpa_irrep = match_irrep.group(1)
+
+                match_photons = regex_tpa_photons.search(tpa_exc)
+                if match_photons:
+                    tpa_dat["tpa_photons"] = [convert_float(x) for x in regex_tpa_photons.findall(tpa_exc)]
+
+                match_tensor = regex_tpa_tensor.search(tpa_exc)
+                if match_tensor:
+                    ## Grabs the tensor as a string
+                    # Form:
+                    # xx (float) xy (float) xz (float)
+                    # yx (float) yy (float) yz (float)
+                    # zx (float) zy (float) zz (float)
+                    ## convert it to an array of floats
+                    tens = []
+                    for tensor_row in match_tensor.group(1).split('\n'):
+                        tens.append(
+                            [convert_float(tensor_row.split()[x]) for x in (1,3,5)]
+                        )
+                    tpa_dat['tpa_tensor'] = tens
+
+                match_tpa_strength = regex_tpa_strength.search(tpa_exc)
+                if match_tpa_strength:
+                    tpa_dat["tpa_strength"] = convert_float(match_tpa_strength.group(1))
+
+                try:
+                    # Try to find the matching 1PA excitation
+                    # Update with TPA parameters
+                    excited_data[tpa_irrep][stateindex].update(tpa_dat)
+                except KeyError:
+                    print("matching 1PA data for 2PA state not found")
+                    
 
         return excited_data
 
