@@ -1139,6 +1139,9 @@ class SingleExcitation(MSONable):
         rot_stre=None,
         dominant_contributions=None,
         moments_columns=None,
+        tpa_strength=None,
+        tpa_photons=None,
+        tpa_tensor = None,
     ):
         """Construct SingleExcitation object.
 
@@ -1159,6 +1162,13 @@ class SingleExcitation(MSONable):
                 "electric_quadrupole" (description of the electronic quadrupole
                 with keys "moment", i.e. the 3x3 matrix of the quadrupole moment,
                 "trace" and "anisotropy").
+            tpa_strength (float): two photon absorption (TPA) strength in au, length representation.
+            tpa_photons (list): TPA photon energies in hartree.
+            tpa_tensor (list): TPA absorption tensors
+                a list of lists, form
+                Sxx Sxy Sxz
+                Syx Syy Syz
+                Szx Szy Szz
         """
         self.tot_en = tot_en
         self.ex_en = ex_en
@@ -1166,6 +1176,11 @@ class SingleExcitation(MSONable):
         self.rot_stre = rot_stre
         self.dominant_contributions = dominant_contributions
         self.moments_columns = moments_columns
+        self.tpa_strength = tpa_strength
+        self.tpa_photons = tpa_photons
+        self.tpa_tensor = tpa_tensor
+
+
 
 
 class EscfData(BaseData):
