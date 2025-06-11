@@ -1181,7 +1181,79 @@ class SingleExcitation(MSONable):
         self.tpa_tensor = tpa_tensor
 
 
+class RICC2Data(BaseData):
+    """
+        Output data of an ricc2 calculation
+        including GS energies, excited states, etc
 
+        Currently NOT feature complete
+    """
+    def __init__(
+        self,
+        energy = None,
+        correlation_energy = None,
+        hf_energy = None,
+        d1_diagnostic = None,
+        excitations = None,
+    ):
+        """Construc RICC2Data object
+            
+        Args:
+            energy (float): ricc2 energy in hartree.
+            correlation_energy (float): correlation energy in hartree.
+            hf_energy (float): hartree fock energy.
+            d1_diagnostic (float): d1 diagnostic value
+            excitations (dict): keys are the name of the irreps and values are 
+                lists of SingleExcitation.
+        """
+        print('Initializing RICC2 Data class')
+        self.energy = energy
+        self.correlation_energy = correlation_energy
+        self.hf_energy = hf_energy
+        self.d1_diagnostic = d1_diagnostic
+        self.excitations = excitations
+
+    @classmethod
+    def from_parser(cls, parser):
+        """
+            Generate an instance of RICC2 data from a parser.
+
+            The parser is based on stdout of a Turbomole executable.
+
+            Args:
+                parser(Parser): the parser to be used to extract the data.
+
+            Returns:
+                RICC2Data.
+        """
+        print("parsing ricc2")
+        energies = parser.ricc2_energy
+
+        excitations = parser.ricc2_excitations
+        
+        if not energies and not excitations:
+            return None
+
+        kwargs = dict(
+            energy = None,
+            correlation_energy = None,
+            hf_energy = None,
+            d1_diagnostic = None,
+            excitations = None,
+        )
+        if excitations is not None:
+            converted_excitations = {}
+            for irrep, l in excitations.items():
+                converted_excitations[irrep] = [SingleExcitation(**d) for d in l]
+            kwargs["excitations"] = converted_excitations
+
+        if energies:
+            kwargs.update(energies)
+        else:
+            print('no ricc2 energies')
+
+
+        return cls(**kwargs)
 
 class EscfData(BaseData):
     """
@@ -1754,6 +1826,8 @@ class AoforceVibrationalData(BaseData):
         return np.count_nonzero(
             np.logical_and(-np.abs(tol) <= f_arr, f_arr <= np.abs(tol))
         )
+
+    
 
 
 class MP2Data(BaseData):

@@ -1099,6 +1099,309 @@ class Parser:
         return d
 
     @lazy_property
+    def ricc2_energy(self):
+        """
+            Parse the CC2 energy and RHF energy for an RICC2 calculation
+        """
+        r = (
+            r"CC equations converged in[\s0-9]+iterations.\s+.*?"
+            ## the above lines ensure the block is grabbed AFTER convergence
+            # as oh a restart, will print an unconverged energy block first
+            + r"(\*{20,}.*?HF\s+energy\s+\:.*?\*{20,})"
+        )
+        match = re.search(r, self.string, re.DOTALL)
+        if match is None:
+            return None
+        d = dict(
+            hf_energy = None,
+            correlation_energy = None,
+            energy = None,
+            d1_diagnostic = None,
+        )
+        for line in match.group(1).splitlines():
+            if 'HF' in line:
+                d["hf_energy"] = convert_float(line.split()[4])
+            if "correlation energy" in line:
+                d["correlation_energy"] = convert_float(line.split()[4])
+            if "Final CC2 energy" in line:
+                d["energy"] = convert_float(line.split()[5])
+            if "D1 diagnostic" in line:
+                d["d1_diagnostic"] = convert_float(line.split()[4])
+
+        return d
+
+    @lazy_property
+    def ricc2_excitations(self):
+        """
+        Extract values for each calculated excitation.
+
+        Valid for ricc2 executable - possibly others?
+        Needs further testing/check to handle all cases
+
+        Returns:
+            dict with name of irreps as keywords and list of excitations
+            as values
+        """
+
+        # Generic CC2 Excitation Blocks
+        # Give excitation energy, irrep, CC2 coefficients
+        r_ricc2_excitation = (
+            r"Energy:\s+" + float_number_all_re 
+            + r"\s+H\s+" + float_number_all_re
+            + r"\s+eV\s+" + float_number_all_re
+            + r"\s+.*?\+={5,}.*?norm of printed elements:\s+"
+            + float_number_all_re
+        )
+        regex_ricc2_excitation = re.compile(r_ricc2_excitation, re.DOTALL)
+
+        match_excitations = regex_ricc2_excitation.findall(self.string)
+        if not match_excitations:
+            print("no excitations")
+            return None
+
+        print("excitations found")
+
+        r_irrep = r"symmetry:\s+([" + irrep_re_group + r"]+)"
+        regex_irrep = re.compile(r_irrep)
+
+        r_ex_en = r"Energy:\s+(" + float_number_all_re + ")"
+        regex_ex_en = re.compile(r_ex_en)
+
+        r_dom_contrib = (
+            r"occ. orb.\s+index.*?\s\+[=\+]+"
+            + r"(.*?)[=\+]+"
+        )
+        regex_dom_contrib=re.compile(r_dom_contrib, re.DOTALL)
+        excited_data = {}
+
+        for exci in match_excitations:
+            exc_data = dict(
+                ex_en = None,
+                dominant_contributions = None,
+            )
+            match_irrep = regex_irrep.search(exci)
+            if match_irrep:
+                irrep = match_irrep.group(1)
+
+            if irrep not in excited_data:
+                excited_data[irrep] = []
+
+            match_ex_en = regex_ex_en.search(exci)
+            if match_ex_en:
+                exc_data["ex_en"] = convert_float(match_ex_en.group(1))
+
+            match_dominant = regex_dom_contrib.search(exci)
+            if match_dominant:
+                dominant_contributions = []
+
+                for line in match_dominant.group(1).splitlines():
+                    line = line.strip()
+                    if not line:
+                        continue
+                    s = line.split()
+                    if len(s) == 12:
+                        # closed shell system
+                        occ_orb = dict(
+                            index = convert_int(s[3]),
+                            irrep = s[2],
+                            energy=None,
+                            spin=None,
+                        )
+                        virt_orb = dict(
+                            index = convert_int(s[7]),
+                            irrep = s[6],
+                            energy = None,
+                            spin = None
+                        )
+                        dominant_contributions.append(
+                            dict(
+                                occ_orb = occ_orb,
+                                virt_orb = virt_orb,
+                                coeff = convert_float(s[10])
+                            )
+                        )
+                    elif len(s) == 14:
+                        # if unpaired spins present
+                        occ_orb = dict(
+                            index = convert_int(s[3]),
+                            irrep = s[2],
+                            energy = None,
+                            spin = s[4],
+                        )
+                        virt_orb = dict(
+                            index = convert_int(s[8]),
+                            irrep = s[7],
+                            energy = None,
+                            spin = s[9],
+                        )
+                        dominant_contributions.append(
+                            dict(
+                                occ_orb = occ_orb,
+                                virt_orb = virt_orb,
+                                coeff = convert_float(s[12])
+                            )
+                        )
+                    else:
+                        print(f'Error while parsing {line} of ricc2 contributions')
+                exc_data['dominant_contributions'] = dominant_contributions
+
+                excited_data[irrep].append(exc_data)
+        
+
+        # Section for 1PA excitation include oscillator strengths
+        # Requested with spectrum datablock in $excitations
+        r_opa_section = (
+            r"ONE-PHOTON ABSORPTION STRENGTHS.*?"
+            + r"\*{5,}(.*?)"
+            r"(?:\*{10}|\-{8,}.\s+total\s+cpu-time)"
+        )
+
+        match_opa = re.search(r_opa_section, self.string, re.DOTALL)
+        if match_opa:
+            # Compile regex here
+            # if OPA data not present, will just be skipped
+            opa_section = match_opa.group(1)
+            r_opa_block = (
+                r"\+={8,}.*?Transition.*?oscillator strength.*?"
+                + float_number_all_re
+            )
+            opa_blocks = re.findall(r_opa_block, opa_section, re.DOTALL)
+
+            r_opa_stateno_irrep = (
+                r"number, symmetry, multiplicity:\s+"
+                + r"([0-9]+)\s+(["
+                + irrep_re_group + "]+)"
+            )
+            regex_opa_stateno_irrep = re.compile(r_opa_stateno_irrep)
+
+            r_osc_strength = (
+                # Note that ambiguity is left here in case a different 
+                # gauge is selected. Normally:
+                #   oscillator strength (length gauge)   :
+                r"oscillator strength.*?:\s+("
+                + float_number_all_re + ")"
+            )
+            regex_osc_strength = re.compile(r_osc_strength, re.DOTALL)
+
+            for block in opa_blocks:
+                opa_data = dict(
+                    # technically do not need a dict here
+                    # but will leave this for ease of adding
+                    # additional parsed data later
+                    osc_stre = None
+                )
+                match_irrep_stateno = regex_opa_stateno_irrep.search(block)
+                if match_irrep_stateno:
+                    state_index = convert_int(match_irrep_stateno.group(1)) - 1
+                    irrep = match_irrep_stateno.group(2)
+                else:
+                    print("An error occured parsing the following OPA data block:")
+                    print(block)
+                    continue
+                
+                match_osc_strength = regex_osc_strength.search(block)
+                if match_osc_strength:
+                    opa_data['osc_stre'] = convert_float(match_osc_strength.group(1))
+
+                try:
+                    excited_data[irrep][state_index].update(opa_data)
+                except (KeyError, IndexError):
+                    print("matching state for the following OPA spectrum data not found in CC2 excitations:")
+                    print(block)
+
+
+            
+
+        # Section for 2PA excitations, including transition strenghts
+        # Requested with twophoton datablock in $excitations
+        r_tpa_section = (
+            r"TWO-PHOTON ABSORPTION STRENGTHS.*?"
+            + r"(STATE NO.:.*?)"
+            r"(?:\*{10}|\-{8,}.\s+total\s+cpu-time)"
+        )
+
+        match_tpa = re.search(r_tpa_section, self.string, re.DOTALL)
+        if match_tpa:
+            tpa_section = match_tpa.group()
+            
+            r_tpa_block = r"STATE.*?Circular:.*?\+={8,}\+"
+            tpa_blocks = re.findall(r_tpa_block, tpa_section, re.DOTALL)
+
+            r_tpa_photons = (
+                r"[0-9]+[\w]{2} PHOTON:\s+("
+                + float_number_all_re
+                + ")"
+            )
+            regex_tpa_photons = re.compile(r_tpa_photons)
+
+            r_tpa_strength = (
+                r"Linear:\s+("
+                + float_number_all_re
+                + ")"
+            )
+            regex_tpa_strength = re.compile(r_tpa_strength)
+
+            r_tpa_irrep = (
+                r"SYMMETRY: (["
+                + irrep_re_group
+                + "]+)"
+            )
+            regex_tpa_irrep = re.compile(r_tpa_irrep)
+
+            # Note: In RICC2 TPA outputs, state numbers give the 
+            #   OVERALL state number, not the number in each irrep
+            #   Unlike the 1PA data. Therefore need to keep track of which
+            #   stateno for each irrep we are using to match
+            irrep_state_counts = {}
+
+            for block in tpa_blocks:
+
+                tpa_data = dict(
+                    tpa_photons = None,
+                    tpa_tensor = None,
+                    tpa_strength = None,
+                )
+
+                match_irrep = regex_tpa_irrep.search(block)
+                if match_irrep:
+                    irrep = match_irrep.group(1)
+                else:
+                    print("FATAL ERROR IN TPA PARSE FOR BLOCK, CANNOT FIND IRREP:")
+                    print(block)
+                    continue
+
+                if irrep in irrep_state_counts:
+                    irrep_state_counts[irrep] += 1
+                else:
+                    irrep_state_counts[irrep] = 1
+
+                state_index = irrep_state_counts[irrep] - 1
+
+                match_tpa_photons = regex_tpa_photons.findall(block)
+                if match_tpa_photons:
+                    tpa_data["tpa_photons"] = [convert_float(x) for x in match_tpa_photons]
+
+                match_tpa_strength = regex_tpa_strength.search(block)
+                if match_tpa_strength:
+                    tpa_data["tpa_strength"] = convert_float(match_tpa_strength.group(1))
+
+                try:
+                    excited_data[irrep][state_index].update(tpa_data)
+                except (IndexError, KeyError):
+                    print("matching state for the following TPA data not found in CC2 excitations:")
+                    print(block)
+
+        # Section for excited state properties/dipole moemnts
+        # Requested with exprop datablock in $excitations
+        r_excited_properties_section = (
+            r"EXCITED STATE PROPERTIES.*?"
+            + r"(\+={8,}.*?)"
+            r"(?:\*{10}|\-{8,}.\s+total\s+cpu-time)"
+        )
+
+        return excited_data
+
+    @lazy_property
     def cosmo_results(self):
         """
         Extract the results of cosmo.
