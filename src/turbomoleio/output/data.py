@@ -1142,6 +1142,7 @@ class SingleExcitation(MSONable):
         tpa_strength=None,
         tpa_photons=None,
         tpa_tensor = None,
+        permanent_dipole=None,
     ):
         """Construct SingleExcitation object.
 
@@ -1162,13 +1163,22 @@ class SingleExcitation(MSONable):
                 "electric_quadrupole" (description of the electronic quadrupole
                 with keys "moment", i.e. the 3x3 matrix of the quadrupole moment,
                 "trace" and "anisotropy").
-            tpa_strength (float): two photon absorption (TPA) strength in au, length representation.
+            tpa_strength (float): two photon absorption (TPA) strength in au, 
+                length representation.
             tpa_photons (list): Individual TPA photon energies in hartree.
             tpa_tensor (list): TPA absorption tensors
                 a list of lists, form
                 Sxx Sxy Sxz
                 Syx Syy Syz
                 Szx Szy Szz
+            permanent_dipole (dict): list of dictionary continuing information on
+                the permanent dipole moment(s). Keys give the type(s) of dipole
+                moment calculated (e.g., "relaxed" or "unrelaxed" -- both of which
+                are calculated by invoking "exprop relaxed states=all" within the
+                $excitations datablock for $ricc2/etc). Values are inner dictionaries
+                with the following keys:
+                "norm" (Norm of the permanent dipole moment vector in Debye)
+                "moments" (3D vector in .a.u. as a list)
         """
         self.tot_en = tot_en
         self.ex_en = ex_en
@@ -1179,6 +1189,7 @@ class SingleExcitation(MSONable):
         self.tpa_strength = tpa_strength
         self.tpa_photons = tpa_photons
         self.tpa_tensor = tpa_tensor
+        self.permanent_dipole = permanent_dipole
 
 
 class RICC2Data(BaseData):
@@ -1299,8 +1310,8 @@ class EscfData(BaseData):
             gs_tot_en (float): total energy of the ground state. Turbomole extracts
                 it from the output of the scf calculation. If that is missing
                 Turbomole sets this value to 0 in the output of escf.
-            excitations (dict): keys are the name of the irreps and values are lists
-                of SingleExcitation.
+            excitations (dict): keys are the name of the irreps and values are lists of 
+                SingleExcitation.
         """
         self.calc_type = calc_type
         self.iterations = iterations

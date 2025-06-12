@@ -1399,6 +1399,148 @@ class Parser:
             r"(?:\*{10}|\-{8,}.\s+total\s+cpu-time)"
         )
 
+        match_excited_properties = re.search(r_excited_properties_section, self.string, re.DOTALL)
+        if match_excited_properties:
+            # Parse the exprop blocks for each excited state, ex: 
+            # (in this case, have exprop relaxed states=all under $excitations)
+            #  +=========================================================================+
+            #  |  Excited state reached by transition:                   model: CC2      |
+            #  |    number, symmetry, multiplicity:    1 a1   1                          |
+            #  |    frequency :   0.3461860473 a.u.     9.42020 e.V.     75979.1 rcm     |
+            #  +=========================================================================+
+
+            #      Total energy of excited state:     -75.9169715015
+
+            #   +-----------------+-----------------+-----------------+-----------------+
+            #   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+            #   +-----------------+-----------------+-----------------+-----------------+
+            #   | xdiplen (unrel) |      0.00000000 |      0.00000000 |      0.00000000 |
+            #   | xdiplen (relax) |      0.00000000 |      0.00000000 |       ---       |
+            #   | ydiplen (unrel) |      0.00000000 |      0.00000000 |      0.00000000 |
+            #   | ydiplen (relax) |      0.00000000 |      0.00000000 |       ---       |
+            #   | zdiplen (unrel) |      0.56576704 |     -4.59406715 |      1.27863935 |
+            #   | zdiplen (relax) |      0.51264495 |     -4.64718924 |       ---       |
+            #   +-----------------+-----------------+-----------------+-----------------+
+
+
+            #     Analysis of relaxed properties:
+            #     ===============================
+
+
+            #     dipole moment:
+            #     --------------
+
+            #     x      0.00000000
+            #     y      0.00000000
+            #     z      0.51264495
+
+            #     | dipole moment | =      0.51264495 a.u. =      1.30301349 debye
+ 
+
+
+            #     Analysis of unrelaxed properties:
+            #     =================================
+
+
+            #     dipole moment:
+            #     --------------
+
+            #     x      0.00000000
+            #     y      0.00000000
+            #     z      0.56576704
+
+            #     | dipole moment | =      0.56576704 a.u. =      1.43803637 debye
+
+            exprop_section = match_excited_properties.group()
+
+
+            r_exprop_block = (
+                r"(\+={8,}\+.*?dipole moment.*?)"
+                + r"(?=\+={8,}\+|-{20,})"
+            )
+            exprop_blocks = re.findall(r_exprop_block, exprop_section, re.DOTALL)
+
+            r_exprop_stateno_irrep = (
+                r"number, symmetry, multiplicity:\s+"
+                + r"([0-9]+)\s+(["
+                + irrep_re_group + "]+)"
+            )
+            regex_exprop_stateno_irrep = re.compile(r_exprop_stateno_irrep)
+
+            # the Total energy of excited state line
+            r_exprop_tot_en = (
+                r"Total energy of excited state:\s+("
+                + float_number_all_re + r")"
+            )
+            regex_exprop_tot_en = re.compile(r_exprop_tot_en)
+
+            r_exprop_dipole_block = r"Analysis of \w+ properties.*?debye"
+            regex_exprop_dipole_block = re.compile(r_exprop_dipole_block, re.DOTALL)
+
+            r_perm_dipole_moment = r"[xyz]\s+(" + float_number_all_re + r")"
+            regex_perm_dipole_moment = re.compile(r_perm_dipole_moment)
+
+            r_perm_dipole_norm = (
+                r"\| dipole moment \|.*?("
+                + float_number_all_re
+                + r") debye"
+            )
+            regex_perm_dipole_norm = re.compile(r_perm_dipole_norm)
+
+            # Parses the "Analysis of _____ properties line
+            # i.e. relaxed vs unrelaxed properties
+            r_perm_dipole_type = r"Analysis of (\w+) properties:"
+            regex_perm_dipole_type = re.compile(r_perm_dipole_type)
+
+            if exprop_blocks:
+                for block in exprop_blocks:
+
+                    exprop_data = dict(
+                        tot_en = None,
+                        permanent_dipole = None,
+                    )
+
+                    match_irrep_stateno = regex_exprop_stateno_irrep.search(block)
+                    if match_irrep_stateno:
+                        state_index = convert_int(match_irrep_stateno.group(1)) - 1
+                        irrep = match_irrep_stateno.group(2)
+                        
+                    match_tot_en = regex_exprop_tot_en.search(block)
+                    if match_tot_en:
+                        exprop_data["tot_en"] = convert_float(match_tot_en.group(1))
+
+                    match_dipole_blocks = regex_exprop_dipole_block.findall(block)
+                    if match_dipole_blocks:
+                        exprop_data["permanent_dipole"] = {}
+                        for dip in match_dipole_blocks:
+
+                            current_dipole = dict(
+                                norm = None,
+                                moments = None,
+                            )
+                            # a Boolean for match here would be trivial
+                            # as this line is directly included in the regex
+                            # for dipole block as a whole
+                            diptype = regex_perm_dipole_type.search(dip).group(1)
+
+                            match_moments = regex_perm_dipole_moment.findall(dip)
+                            if match_moments:
+                                current_dipole["moments"] = [convert_float(x) for x in match_moments]
+
+                            match_norm = regex_perm_dipole_norm.search(dip)
+                            if match_norm:
+                                current_dipole["norm"] = convert_float(match_norm.group(1))
+                            
+                            exprop_data["permanent_dipole"][diptype] = current_dipole
+
+
+                    try:
+                        excited_data[irrep][state_index].update(exprop_data)
+                    except (IndexError, KeyError):
+                        print("No matching state found for the following exprop data:")
+                        print(block)
+
+
         return excited_data
 
     @lazy_property
