@@ -1145,6 +1145,21 @@ class Parser:
 
         # Generic CC2 Excitation Blocks
         # Give excitation energy, irrep, CC2 coefficients
+        # Example:
+
+        #    Energy:     0.3461860 H      9.42020 eV    75979.055 cm-1
+          
+        # +=======================================================================+
+        # | type: RE0                    symmetry: a1              state:    1    |
+        # +-----------------------+-----------------------+-----------------------+
+        # | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+        # +=======================+=======================+=======================+
+        # |    3 a1       3       |    4 a1       6       |   0.90404      81.7   |
+        # |    3 a1       3       |    6 a1       8       |   0.31956      10.2   |
+        # |    3 a1       3       |    5 a1       7       |  -0.23751       5.6   |
+        # +=======================+=======================+=======================+
+        # norm of printed elements:  0.97582
+
         r_ricc2_excitation = (
             r"Energy:\s+" + float_number_all_re 
             + r"\s+H\s+" + float_number_all_re
@@ -1250,6 +1265,23 @@ class Parser:
 
         # Section for 1PA excitation include oscillator strengths
         # Requested with spectrum datablock in $excitations
+        # Example:
+        # +=========================================================================+
+        # |  Transition                                             model: CC2      |
+        # |    number, symmetry, multiplicity:    1 a1   1                          |
+        # |    frequency :   0.3461860473 a.u.     9.42020 e.V.     75979.1 rcm     |
+        # +=========================================================================+
+
+        #    +-----------+-----------------+-----------------+---------------------+
+        #    | operator  |   left moment   |  right moment   | transition strength |
+        #    +-----------+-----------------+-----------------+---------------------+
+        #    | xdiplen   |     -0.00000000 |     -0.00000000 |       0.00000000    |
+        #    | ydiplen   |      0.00000000 |      0.00000000 |       0.00000000    |
+        #    | zdiplen   |      0.92036021 |      0.48339914 |       0.44490133    |
+        #    +-----------+-----------------+-----------------+---------------------+
+ 
+        #      oscillator strength (length gauge)   :      0.10267909
+ 
         r_opa_section = (
             r"ONE-PHOTON ABSORPTION STRENGTHS.*?"
             + r"\*{5,}(.*?)"
@@ -1314,6 +1346,33 @@ class Parser:
 
         # Section for 2PA excitations, including transition strenghts
         # Requested with twophoton datablock in $excitations
+        # Example:
+        
+        # STATE NO.:         1
+        # SYMMETRY: a1  MULTIPLICITY: 1
+        # +===========================================================================+
+        # | EXCI. ENERGY:   0.34618605 a.u.   131.6 nm   9.420 eV      75979.05 cm-1  |
+        # |---------------------------------------------------------------------------|
+        # | 1ST PHOTON:    0.17309302 a.u.    263.2 nm     4.710 ev    37989.53 cm-1  |
+        # | 2ND PHOTON:    0.17309302 a.u.    263.2 nm     4.710 ev    37989.53 cm-1  |
+        # |---------------------------------------------------------------------------|
+        # | xdiplen xdiplen         0 <= F       4.97478    F <= 0       2.69557      |
+        # | ydiplen xdiplen         0 <= F    -.-           F <= 0     -.-            |
+        # | zdiplen xdiplen         0 <= F    -.-           F <= 0     -.-            |
+        # | xdiplen ydiplen         0 <= F    -.-           F <= 0     -.-            |
+        # | ydiplen ydiplen         0 <= F      -4.14666    F <= 0      -2.09441      |
+        # | zdiplen ydiplen         0 <= F    -.-           F <= 0     -.-            |
+        # | xdiplen zdiplen         0 <= F    -.-           F <= 0     -.-            |
+        # | ydiplen zdiplen         0 <= F    -.-           F <= 0     -.-            |
+        # | zdiplen zdiplen         0 <= F       9.10869    F <= 0       4.79018      |
+        # |---------------------------------------------------------------------------|
+        # |                       ROTATIONALLY AVERAGED VALUES:                       |
+        # |                Transition strengths        Transition rates               |
+        # | Linear:                 12.335107               0.925959E-20              |
+        # | Perpendicular:           9.168728               0.688269E-20              |
+        # | Circular:                9.573867               0.718681E-20              |
+        # +===========================================================================+
+
         r_tpa_section = (
             r"TWO-PHOTON ABSORPTION STRENGTHS.*?"
             + r"(STATE NO.:.*?)"
@@ -1393,6 +1452,57 @@ class Parser:
 
         # Section for excited state properties/dipole moemnts
         # Requested with exprop datablock in $excitations
+        # Example: (in this case, have exprop relaxed states=all under $excitations)
+
+        #  +=========================================================================+
+        #  |  Excited state reached by transition:                   model: CC2      |
+        #  |    number, symmetry, multiplicity:    1 a1   1                          |
+        #  |    frequency :   0.3461860473 a.u.     9.42020 e.V.     75979.1 rcm     |
+        #  +=========================================================================+
+
+        #      Total energy of excited state:     -75.9169715015
+
+        #   +-----------------+-----------------+-----------------+-----------------+
+        #   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+        #   +-----------------+-----------------+-----------------+-----------------+
+        #   | xdiplen (unrel) |      0.00000000 |      0.00000000 |      0.00000000 |
+        #   | xdiplen (relax) |      0.00000000 |      0.00000000 |       ---       |
+        #   | ydiplen (unrel) |      0.00000000 |      0.00000000 |      0.00000000 |
+        #   | ydiplen (relax) |      0.00000000 |      0.00000000 |       ---       |
+        #   | zdiplen (unrel) |      0.56576704 |     -4.59406715 |      1.27863935 |
+        #   | zdiplen (relax) |      0.51264495 |     -4.64718924 |       ---       |
+        #   +-----------------+-----------------+-----------------+-----------------+
+
+
+        #     Analysis of relaxed properties:
+        #     ===============================
+
+
+        #     dipole moment:
+        #     --------------
+
+        #     x      0.00000000
+        #     y      0.00000000
+        #     z      0.51264495
+
+        #     | dipole moment | =      0.51264495 a.u. =      1.30301349 debye
+ 
+
+
+        #     Analysis of unrelaxed properties:
+        #     =================================
+
+
+        #     dipole moment:
+        #     --------------
+
+        #     x      0.00000000
+        #     y      0.00000000
+        #     z      0.56576704
+
+        #     | dipole moment | =      0.56576704 a.u. =      1.43803637 debye
+
+
         r_excited_properties_section = (
             r"EXCITED STATE PROPERTIES.*?"
             + r"(\+={8,}.*?)"
@@ -1401,56 +1511,6 @@ class Parser:
 
         match_excited_properties = re.search(r_excited_properties_section, self.string, re.DOTALL)
         if match_excited_properties:
-            # Parse the exprop blocks for each excited state, ex: 
-            # (in this case, have exprop relaxed states=all under $excitations)
-            #  +=========================================================================+
-            #  |  Excited state reached by transition:                   model: CC2      |
-            #  |    number, symmetry, multiplicity:    1 a1   1                          |
-            #  |    frequency :   0.3461860473 a.u.     9.42020 e.V.     75979.1 rcm     |
-            #  +=========================================================================+
-
-            #      Total energy of excited state:     -75.9169715015
-
-            #   +-----------------+-----------------+-----------------+-----------------+
-            #   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
-            #   +-----------------+-----------------+-----------------+-----------------+
-            #   | xdiplen (unrel) |      0.00000000 |      0.00000000 |      0.00000000 |
-            #   | xdiplen (relax) |      0.00000000 |      0.00000000 |       ---       |
-            #   | ydiplen (unrel) |      0.00000000 |      0.00000000 |      0.00000000 |
-            #   | ydiplen (relax) |      0.00000000 |      0.00000000 |       ---       |
-            #   | zdiplen (unrel) |      0.56576704 |     -4.59406715 |      1.27863935 |
-            #   | zdiplen (relax) |      0.51264495 |     -4.64718924 |       ---       |
-            #   +-----------------+-----------------+-----------------+-----------------+
-
-
-            #     Analysis of relaxed properties:
-            #     ===============================
-
-
-            #     dipole moment:
-            #     --------------
-
-            #     x      0.00000000
-            #     y      0.00000000
-            #     z      0.51264495
-
-            #     | dipole moment | =      0.51264495 a.u. =      1.30301349 debye
- 
-
-
-            #     Analysis of unrelaxed properties:
-            #     =================================
-
-
-            #     dipole moment:
-            #     --------------
-
-            #     x      0.00000000
-            #     y      0.00000000
-            #     z      0.56576704
-
-            #     | dipole moment | =      0.56576704 a.u. =      1.43803637 debye
-
             exprop_section = match_excited_properties.group()
 
 
