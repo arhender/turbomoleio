@@ -1163,7 +1163,7 @@ class SingleExcitation(MSONable):
                 with keys "moment", i.e. the 3x3 matrix of the quadrupole moment,
                 "trace" and "anisotropy").
             tpa_strength (float): two photon absorption (TPA) strength in au, length representation.
-            tpa_photons (list): TPA photon energies in hartree.
+            tpa_photons (list): Individual TPA photon energies in hartree.
             tpa_tensor (list): TPA absorption tensors
                 a list of lists, form
                 Sxx Sxy Sxz

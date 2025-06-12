@@ -1,0 +1,166 @@
+{
+  "@module": "turbomoleio.output.files",
+  "@class": "ScfOutput",
+  "@version": "1.7.0",
+  "dft": null,
+  "scf": null,
+  "energies": {
+    "@module": "turbomoleio.output.data",
+    "@class": "ScfEnergiesData",
+    "@version": "1.7.0",
+    "total_energy": -8.391495015,
+    "kinetic_energy": 7.7323082206,
+    "potential_energy": null,
+    "virial_theorem": null,
+    "wavefunction_norm": null,
+    "coulomb_energy": -13.8862624777,
+    "xc_energy": -2.237540758,
+    "ts_energy": -0.0,
+    "free_energy": -8.391495015,
+    "sigma0_energy": -8.391495015
+  },
+  "electrostatic": null,
+  "geometry": {
+    "@module": "turbomoleio.output.data",
+    "@class": "GeometryData",
+    "@version": "1.7.0",
+    "center_of_mass": [
+      0.67796736,
+      0.39142464,
+      0.27677902
+    ],
+    "center_of_charge": [
+      1.33629628,
+      0.77151102,
+      0.54554067
+    ],
+    "molecule": {
+      "@module": "pymatgen.core.structure",
+      "@class": "Molecule",
+      "charge": 0.0,
+      "spin_multiplicity": 1,
+      "sites": [
+        {
+          "name": "Li",
+          "species": [
+            {
+              "element": "Li",
+              "occu": 1
+            }
+          ],
+          "xyz": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "properties": {},
+          "label": "Li"
+        },
+        {
+          "name": "H",
+          "species": [
+            {
+              "element": "H",
+              "occu": 1
+            }
+          ],
+          "xyz": [
+            2.8285501569346683,
+            1.6330641925784526,
+            1.1547507652473916
+          ],
+          "properties": {},
+          "label": "H"
+        }
+      ],
+      "properties": {}
+    }
+  },
+  "basis": null,
+  "run": {
+    "@module": "turbomoleio.output.data",
+    "@class": "RunData",
+    "@version": "1.7.0",
+    "host": "computermachine",
+    "start_time": {
+      "@module": "datetime",
+      "@class": "datetime",
+      "string": "2025-06-12 17:15:23.523000"
+    },
+    "end_time": {
+      "@module": "datetime",
+      "@class": "datetime",
+      "string": "2025-06-12 17:15:30.738000"
+    },
+    "cpu_time": 12.0,
+    "wall_time": 7.22
+  },
+  "tm": {
+    "@module": "turbomoleio.output.data",
+    "@class": "TurbomoleData",
+    "@version": "1.7.0",
+    "version": "7.9",
+    "build": null,
+    "executable": "riper"
+  },
+  "cosmo": null,
+  "spin": {
+    "@module": "turbomoleio.output.data",
+    "@class": "SpinData",
+    "@version": "1.7.0",
+    "unrestricted": false,
+    "s2": null
+  },
+  "integral": null,
+  "smearing": null,
+  "symmetry": null,
+  "periodicity": {
+    "@module": "turbomoleio.output.data",
+    "@class": "PeriodicityData",
+    "@version": "1.7.0",
+    "periodicity": 3,
+    "lattice_params": [
+      2.8285501569346683,
+      2.8285501569346683,
+      2.8285501569346683,
+      60.0,
+      60.0,
+      60.0
+    ],
+    "shortest_interatomic_distance": 2.0000781849721023,
+    "direct_space_vectors": [
+      [
+        2.8285501569346683,
+        0.0,
+        0.0
+      ],
+      [
+        1.41427508111322,
+        2.4495962915135654,
+        0.0
+      ],
+      [
+        1.41427508111322,
+        0.8165320989351125,
+        2.3095015304947832
+      ]
+    ],
+    "reciprocal_space_vectors": [
+      [
+        2.221344847393538,
+        -1.2824940425955291,
+        -0.9068602359248766
+      ],
+      [
+        0.0,
+        2.5649880851910583,
+        -0.9068602359248766
+      ],
+      [
+        0.0,
+        0.0,
+        2.72058070777463
+      ]
+    ]
+  }
+}
